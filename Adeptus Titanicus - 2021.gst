@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1c87-43b9-dc9b-818a" name="Adeptus Titanicus - 2021 v1.0" revision="9" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="1c87-43b9-dc9b-818a" name="Adeptus Titanicus - 2021 v1.0" revision="10" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
-    <costType id="a273-87d3-a4bf-b879" name="Points" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="a891-5543-2008-f12d" name="Strategem Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="a273-87d3-a4bf-b879" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="a891-5543-2008-f12d" name=" Stratagem Points" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="c743-a0e5-479e-5728" name="Weapon">
@@ -68,7 +68,7 @@
     <categoryEntry id="bba1-8533-672b-ba1c" name="Support Titan" hidden="false"/>
     <categoryEntry id="a1bf-302d-7589-b7ca" name="Allegiance" hidden="false"/>
     <categoryEntry id="1e43-b8b0-f4b0-2ae0" name="Support Banner" hidden="false"/>
-    <categoryEntry id="821a-78d5-2a79-2d01" name="Strategems" hidden="false"/>
+    <categoryEntry id="821a-78d5-2a79-2d01" name="Stratagems" hidden="false"/>
     <categoryEntry id="ca5e-df69-5578-390f" name="Ranged Support" hidden="false"/>
     <categoryEntry id="fa02-f0ac-44d2-2a6a" name="Tricks and Tactics" hidden="false"/>
     <categoryEntry id="88a0-4dc0-5534-6e9c" name="Warp Trickery" hidden="false"/>
@@ -96,7 +96,7 @@
   <forceEntries>
     <forceEntry id="fa33-4964-6b14-4d2c" name="Titan Battlegroup" hidden="false">
       <categoryLinks>
-        <categoryLink id="17d7-9910-d5cb-a981" name="Maniples" page="" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="false"/>
+        <categoryLink id="17d7-9910-d5cb-a981" name="Maniple" page="" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="false"/>
         <categoryLink id="19b8-3f21-680b-c9b6" name="Support Titan" hidden="false" targetId="bba1-8533-672b-ba1c" primary="false"/>
         <categoryLink id="f1a3-520b-a45c-abc1" name="Allegiance" hidden="false" targetId="a1bf-302d-7589-b7ca" primary="false">
           <constraints>
@@ -112,7 +112,7 @@
     <entryLink id="0767-0149-76d6-49ff" name="Axiom Battleline Maniple" hidden="false" collective="false" import="false" targetId="27f0-37fb-f1e8-ef98" type="selectionEntry"/>
     <entryLink id="f7ea-8928-14d9-f2b3" name="Arcus Battleline Maniple" hidden="false" collective="false" import="false" targetId="6936-6654-fa29-752f" type="selectionEntry"/>
     <entryLink id="6420-6d8f-8982-d229" name="Corsair Battleline Maniple" hidden="false" collective="false" import="false" targetId="1ea7-d1fd-6570-fca1" type="selectionEntry"/>
-    <entryLink id="f290-1b63-0939-36ab" name="Dominus Battleline Maniple" hidden="false" collective="false" import="false" targetId="0e20-fc99-be44-e138" type="selectionEntry"/>
+    <entryLink id="f290-1b63-0939-36ab" name="Dominus Battleforce Maniple" hidden="false" collective="false" import="false" targetId="0e20-fc99-be44-e138" type="selectionEntry"/>
     <entryLink id="2730-5707-f7c4-432b" name="Extermigus Battleline Maniple" hidden="false" collective="false" import="false" targetId="cd0d-5c00-4d91-858a" type="selectionEntry"/>
     <entryLink id="7e59-d266-3ec7-8596" name="Ferrox Light Maniple" hidden="false" collective="false" import="false" targetId="2921-b88e-4539-27ba" type="selectionEntry"/>
     <entryLink id="7023-4c5b-c1a6-c123" name="Firmus Light Maniple" hidden="false" collective="false" import="false" targetId="d762-f789-76d1-b9c1" type="selectionEntry"/>
@@ -168,6 +168,530 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="a714-dc6e-f06e-06fa" name="Canis Light Maniple" hidden="false" collective="false" import="true" targetId="eccb-c41a-b3bd-ee8b" type="selectionEntry"/>
+    <entryLink id="ff38-85e4-6f48-a998" name="Blind Barrage" hidden="false" collective="false" import="true" targetId="a1b8-ea79-9611-3889" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="265d-52a8-f83a-8745" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9aa6-72ef-622c-4cc4" name="Vox Blackout" hidden="false" collective="false" import="true" targetId="9f1e-ff47-7b04-afab" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e087-1ea3-1f29-4ade" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6e2d-8366-18a9-9a8c" name="Auspex Bafflers" hidden="false" collective="false" import="true" targetId="d461-02cf-f753-1e22" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="67e0-5d7c-447f-2da2" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5d3c-71d5-fb10-2820" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="42f6-8dbf-5355-e738" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="62ac-202f-c4a3-00d3" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8883-73ad-a8dc-6a5c" name="Overcharged Cannon" hidden="false" collective="false" import="true" targetId="4029-6e0f-a705-4e89" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6d40-3b95-5e70-db8b" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="feb5-5b7a-1f1f-0223" name="Secutarii Battalion" hidden="true" collective="false" import="true" targetId="fcbb-8ee7-2015-9d20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9afd-7ca5-1288-a4c3" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="92b9-b0e6-9ff1-8186" name="Wages of Betrayal" hidden="true" collective="false" import="true" targetId="6a7d-e53f-bd86-bfcd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="01e9-b4a6-0da0-ec38" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="40ae-1204-9279-4194" name="Endurance of Terra" hidden="true" collective="false" import="true" targetId="cc10-c493-6b4d-488d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="08d7-e4ac-f622-7abb" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="554f-ccb3-8387-1da4" name="Great Crusade Titans" hidden="true" collective="false" import="true" targetId="64fb-ff33-f3f7-feec" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f4f2-59c1-0335-a255" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8fc1-ee22-ad0c-ea30" name="The Long Retreat" hidden="true" collective="false" import="true" targetId="bf2c-3508-5b00-eee2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3bb4-8e77-259e-2c18" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c1f6-fdc0-30e7-66a8" name="Martian Servitor Clades" hidden="true" collective="false" import="true" targetId="3bc8-fefc-43de-5eb5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="eead-d1b8-7512-fe73" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="080d-3820-81d2-3ac3" name="Scatterable Mines" hidden="false" collective="false" import="true" targetId="70d8-1e11-4565-ce8f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2e98-060f-06da-3c5e" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8b77-659b-4b6c-4941" name="Static Rain" hidden="false" collective="false" import="true" targetId="27f5-7866-70e3-fd84" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f39c-47c9-4cf5-aacd" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eabd-57b9-88a9-431a" name="Strafing Run" hidden="false" collective="false" import="true" targetId="3dde-35da-aff8-fda6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a0ca-eb99-1f11-9f20" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cb23-afb5-5e17-ef92" name="Artillery Bombardment" hidden="false" collective="false" import="true" targetId="5a0b-8fc2-b985-9eca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c924-12b6-98f9-9699" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd9d-cf92-bbd9-0ebb" name="Orbital Lance Strike" hidden="false" collective="false" import="true" targetId="0596-8fb4-1516-cf9d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="44ca-0486-0c70-dbfe" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1cc1-bea0-c13d-153c" name="Noble Sacrifice" hidden="false" collective="false" import="true" targetId="6020-cdeb-fb1b-7581" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="350c-9956-5e78-4df2" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0dac-596f-5a3c-4184" name="Outflank" hidden="false" collective="false" import="true" targetId="a111-216f-6196-f92a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="de8d-44be-4a8d-6db6" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da09-5c7c-9568-b3bb" name="Sabotage" hidden="false" collective="false" import="true" targetId="7702-457c-dcb6-0a8b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="50b4-b998-3055-5b51" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4db3-b821-bf04-430b" name="Thermal Mines" hidden="false" collective="false" import="true" targetId="2f1a-ec89-e799-0404" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aa01-b4bf-42c1-494e" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5e98-239a-644a-c41c" name="Voidbreaker Field" hidden="false" collective="false" import="true" targetId="6e3f-5b50-7c02-ce15" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6922-36f9-29ab-3f9f" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="09de-141a-0028-55e0" name="Experimental Weapon" hidden="false" collective="false" import="true" targetId="cb26-2609-02d4-d5d7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a2cd-59ae-6968-ba48" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7d6f-144f-38e4-1302" name="Dawn Attack" hidden="false" collective="false" import="true" targetId="f29c-45f1-bf31-5902" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="24be-f571-2ddd-cdda" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8962-f7c4-447e-379c" name="Cursed Earth" hidden="false" collective="false" import="true" targetId="5f33-1b82-06dd-e44c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="865c-845b-6905-00f4" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="90f8-8d05-3fc5-6402" name="Earthshaker Mines" hidden="false" collective="false" import="true" targetId="f2a8-46cc-9457-c60a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e7e4-05d2-8f09-f748" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b71a-4080-0267-26c6" name="Quake Shells" hidden="false" collective="false" import="true" targetId="8937-e617-5f46-7b39" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a929-2c3a-9c46-5fd1" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ce88-9972-4075-614e" name="Haywire Barrage" hidden="false" collective="false" import="true" targetId="97a2-15f4-c5a4-6bca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b130-c89a-7be5-5547" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aa32-9964-982f-6b8c" name="Dusk Attack" hidden="false" collective="false" import="true" targetId="8948-c9e8-722d-e486" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f851-3b51-57f1-84ff" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c669-ce0f-8102-14c0" name="False Intel" hidden="false" collective="false" import="true" targetId="d7d2-857c-415a-bb7f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e690-ac3e-d5f9-fdad" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e7d3-54a2-ef0c-c051" name="Reactor Surge" hidden="false" collective="false" import="true" targetId="fa27-6bcc-489a-3092" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c065-f01b-c5b4-7cd1" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3968-24bd-e4aa-e726" name="Partial Shutdown" hidden="false" collective="false" import="true" targetId="868b-a5b6-3748-43f4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cc1b-4bdf-5140-6eb9" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a6cf-b8ab-19bc-3709" name="Tactical Assessment" hidden="false" collective="false" import="true" targetId="7c2c-e1ec-d420-fc4f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1285-ba5b-50d8-9a61" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ace8-8f9f-56b9-62f7" name="Last Ditch Effort" hidden="false" collective="false" import="true" targetId="ae1e-4588-ded0-2364" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9dad-f37f-fe30-9f9c" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fc5a-600a-c66f-fbd7" name="Iron Resolve" hidden="true" collective="false" import="true" targetId="9e5a-1604-1fcc-7875" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="8fd4-9b2f-2580-1543" name="EMP Discharge" hidden="true" collective="false" import="true" targetId="8442-cea2-9f20-8297" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="785a-709b-adbf-5f72" name="Only Forwards" hidden="true" collective="false" import="true" targetId="b7e0-9860-994c-382f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="5fd6-144f-f843-70b4" name="Even in Death" hidden="true" collective="false" import="true" targetId="d32d-def2-eef4-cdbc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="fa74-c740-d41a-7459" name="Weapons to Full" hidden="true" collective="false" import="true" targetId="3305-b44f-acaf-c0bf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="b7b3-21c5-60bc-0330" name="Sacrificial Lock-on" hidden="true" collective="false" import="true" targetId="a32e-ccfe-6226-b0da" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f8b-8106-bae4-0c3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="5505-3712-938d-8256" name="Concealment Barrage" hidden="false" collective="false" import="true" targetId="35fa-a217-7a34-4939" type="selectionEntry"/>
+    <entryLink id="a422-8484-5e4a-e163" name="MIU Link" hidden="false" collective="false" import="true" targetId="09ea-6d5a-dfc2-7669" type="selectionEntry"/>
+    <entryLink id="ce97-bf00-fa48-db47" name="Augmented Servitor Clades" hidden="false" collective="false" import="true" targetId="430b-b5b9-6986-8f5a" type="selectionEntry"/>
+    <entryLink id="f497-3823-1ab9-b25c" name="Veteran Princeps" hidden="false" collective="false" import="true" targetId="901f-704b-7304-03b3" type="selectionEntry"/>
+    <entryLink id="71d4-696f-6263-2dcf" name="Shock Mines" hidden="false" collective="false" import="true" targetId="d3eb-33c5-1c17-70d1" type="selectionEntry"/>
+    <entryLink id="1887-9051-c9c7-510b" name="Tracer Cloud" hidden="false" collective="false" import="true" targetId="42b6-c070-d5ba-3174" type="selectionEntry"/>
+    <entryLink id="d4e5-fa03-6761-5f42" name="Homing Warheads" hidden="false" collective="false" import="true" targetId="aa12-c5d1-eb32-ed16" type="selectionEntry"/>
+    <entryLink id="f243-2d17-a722-9252" name="Enhanced Coolant" hidden="false" collective="false" import="true" targetId="0f3b-ae97-6641-d2b3" type="selectionEntry"/>
+    <entryLink id="7393-ff3b-b6b9-e66b" name="Redundant Systems" hidden="false" collective="false" import="true" targetId="24ff-a46c-1c21-da7f" type="selectionEntry"/>
+    <entryLink id="ead4-83d7-2b88-388b" name="Experimental Locomotors" hidden="false" collective="false" import="true" targetId="c7de-7d47-8393-1224" type="selectionEntry"/>
+    <entryLink id="0a92-ba75-7c2d-05d0" name="Override Signal" hidden="false" collective="false" import="true" targetId="1b93-e3cd-9af6-e266" type="selectionEntry"/>
+    <entryLink id="6ffd-4272-6a8e-702a" name="[Astorum] Machine Defiance" hidden="true" collective="false" import="true" targetId="c830-1547-d4de-5bef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="012c-f71b-873f-fb9f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0ba9-e1e9-1a30-eb91" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="be3a-c2d1-39d8-6fc3" name="[Astorum] Bounty of Mars" hidden="true" collective="false" import="true" targetId="65dd-b2e3-f95b-fcdd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="012c-f71b-873f-fb9f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6f4c-dfdc-b1a7-f3e1" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c1a3-eaa0-bb6b-e13b" name="[Astraman] Stand Firm" hidden="true" collective="false" import="true" targetId="a7b4-3f05-3b24-01e4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a826-edc7-ca8c-ec3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="84f5-eaee-dbbb-8756" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a291-88b1-21b6-9fd3" name="[Astraman] Strength and Resolve" hidden="true" collective="false" import="true" targetId="2460-a0d3-7863-19e9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a826-edc7-ca8c-ec3b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0f3d-9bdd-946a-7e42" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="11bc-05f5-6da3-a179" name="[Atarus] Impetuous Machine Spirit" hidden="true" collective="false" import="true" targetId="1024-7630-7cc0-6823" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c09-a1b2-9e08-00f5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="04fb-000e-238d-336a" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7fb8-4ba0-966d-3344" name="[Atarus] Maniple of One" hidden="true" collective="false" import="true" targetId="f954-c6b5-0777-e899" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c09-a1b2-9e08-00f5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cb4d-8696-58ea-d2ec" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="13b1-8fd3-9fc1-a480" name="[Defensor] A Day of Retribution" hidden="true" collective="false" import="true" targetId="31f3-499f-ad7e-707d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a50-501c-e6cd-e6d5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5675-7ef0-4fe9-b333" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b565-c792-30bf-c5ee" name="[Fortidus] For the Red Planet" hidden="true" collective="false" import="true" targetId="f257-77fd-b9aa-c55f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ddb-01e3-53a7-9faf" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="10c3-b8ff-b674-7982" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ff76-cf2c-66c6-7b2a" name="[Defensor] Blessings of the Emperor" hidden="true" collective="false" import="true" targetId="f1ec-6c59-a379-fd98" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a50-501c-e6cd-e6d5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="113c-f362-f9e5-cf22" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ff80-8a70-f2b2-726b" name="[Fortidus] Red Skies" hidden="true" collective="false" import="true" targetId="2eb2-4250-5f27-e79a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ddb-01e3-53a7-9faf" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cc7b-bc21-4986-112e" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9ebc-42b1-1752-6548" name="[Honorum] Crusading Spirit" hidden="true" collective="false" import="true" targetId="8a44-f56f-9699-750c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b22-ea54-e651-0fb3" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1272-0c7a-e040-d1be" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="219b-4d42-197b-8831" name="[Ignatum] Guard the Gates" hidden="true" collective="false" import="true" targetId="7850-61dd-53c9-6b62" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f108-a1f1-7ee4-0ec7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5230-188d-756d-ba44" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2a99-7607-a63a-3145" name="[Lysanda] Frontier Guard" hidden="true" collective="false" import="true" targetId="5975-63d5-3099-4541" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddd0-9547-d8a7-e181" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7b35-0bf8-009e-38f1" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd5c-7f80-6ff5-962f" name="[Ignatum] Punish Their Folly" hidden="true" collective="false" import="true" targetId="6e25-5074-6d63-d43a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f108-a1f1-7ee4-0ec7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="aa9c-39e4-cb44-c929" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3a39-2016-74de-b080" name="[Metalica] Harmony and Order" hidden="true" collective="false" import="true" targetId="0f93-489f-a0c0-0a99" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cddc-89ea-1129-239e" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f3a5-add7-c8b1-7303" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6abf-baf2-e324-5ad5" name="[Osedax] Blood Begets Blood" hidden="true" collective="false" import="true" targetId="0b3f-6054-0791-454b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e246-4332-8806-b3b5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="da84-56bd-c984-9a93" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="64d9-af88-a7b0-2f19" name="[Solaria] Fog of War" hidden="true" collective="false" import="true" targetId="a852-206e-59b1-55d7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9e2a-efe4-436e-b0d6" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0a5a-9635-ae9e-bb48" name="[Praesagius] Precision Volley" hidden="true" collective="false" import="true" targetId="5553-5428-23b5-dfea" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c69d-140b-5edb-5134" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="91f7-bb14-c493-f95a" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9304-63ad-ded3-1770" name="[Osedax] Relentless March" hidden="true" collective="false" import="true" targetId="d134-fe69-a13d-ce02" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e246-4332-8806-b3b5" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="348c-b5e7-1015-20ff" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bf58-3812-e446-c4fb" name="[Oberon] Decisive Action" hidden="true" collective="false" import="true" targetId="63e0-58a3-913b-05fb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21e3-22df-4b4f-0ea7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6523-340b-4f82-d36f" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8acc-91e9-eef2-0462" name="[Oberon] Strategiser" hidden="true" collective="false" import="true" targetId="b6c1-0c75-44d4-2d3d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21e3-22df-4b4f-0ea7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="152d-af23-bb24-d613" name="Stratagems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="27f0-37fb-f1e8-ef98" name="Axiom Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -227,8 +751,8 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c59-301c-04e1-3fdf" name="Titan Legio" hidden="false" collective="false" import="true" type="upgrade">
@@ -410,8 +934,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="012c-f71b-873f-fb9f" name="Legio Astorum (Warp Runners)" hidden="false" collective="false" import="true" type="upgrade">
@@ -428,8 +952,8 @@
         <categoryLink id="c38e-c308-eb45-093b" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f108-a1f1-7ee4-0ec7" name="Legio Ignatum (Fire Wasps)" hidden="false" collective="false" import="true" type="upgrade">
@@ -443,8 +967,8 @@
         <categoryLink id="5f29-86fc-3d89-921a" name="Legio Ignatum" hidden="false" targetId="8895-50f1-e1d3-7f86" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="63ab-6959-16ed-45d2" name="Legio Gryphonicus (War Griffons)" hidden="false" collective="false" import="true" type="upgrade">
@@ -463,8 +987,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="feb8-beae-1f30-b96b" name="Legio Gryphonicus" hidden="false" targetId="8f56-b574-99bf-c03d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4a50-501c-e6cd-e6d5" name="Legio Defensor (Nova Guard)" hidden="false" collective="false" import="true" type="upgrade">
@@ -481,8 +1005,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="4066-175b-8961-1835" name="Legio Defensor" hidden="false" targetId="cad0-ea46-8480-6e1d" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8175-4b6f-0623-d33b" name="Legio Solaria (Imperial Hunters)" hidden="false" collective="false" import="true" type="upgrade">
@@ -496,8 +1020,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="189c-0e6f-042f-2bc4" name="Legio Solaria" hidden="false" targetId="b606-3ec3-6c13-2846" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4c09-a1b2-9e08-00f5" name="Legio Atarus (Firebrands)" hidden="false" collective="false" import="true" type="upgrade">
@@ -511,8 +1035,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="1292-ed7d-d246-57a8" name="Legio Atarus" hidden="false" targetId="a054-62ef-9e39-c170" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cddc-89ea-1129-239e" name="Legio Metalica (Iron Skulls)" hidden="false" collective="false" import="true" type="upgrade">
@@ -526,8 +1050,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="e361-9707-3890-e759" name="Legio Metalica" hidden="false" targetId="da14-e445-33e5-d022" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a826-edc7-ca8c-ec3b" name="Legio Astraman (Morning Stars)" hidden="false" collective="false" import="true" type="upgrade">
@@ -541,8 +1065,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="2793-4f7f-dcd8-ddd1" name="Legio Astraman" hidden="false" targetId="c870-9efc-cffb-9b43" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c69d-140b-5edb-5134" name="Legio Praesagius (True Messengers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -562,8 +1086,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="1e16-2643-1be1-5358" name="Legio Praesagius" hidden="false" targetId="1501-2f30-d67a-c4f5" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ddb-01e3-53a7-9faf" name="Legio Fortidus (Dauntless)" hidden="false" collective="false" import="true" type="upgrade">
@@ -580,8 +1104,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="1214-8e4d-7470-6b01" name="Legio Fortidus" hidden="false" targetId="04e0-9932-5d9c-c441" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3209-db21-0091-52ae" name="Legio Crucius (Warmongers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -598,8 +1122,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="e65a-91e4-d428-aa22" name="Legio Crucius" hidden="false" targetId="0961-9166-b2a7-fe50" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b22-ea54-e651-0fb3" name="Legio Honorum (Death Bolts)" hidden="false" collective="false" import="true" type="upgrade">
@@ -616,8 +1140,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="aeab-4741-a840-55f0" name="Legio Honorum" hidden="false" targetId="e4ca-483e-38b8-0948" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e246-4332-8806-b3b5" name="Legio Osedax (Cockatrices)" hidden="false" collective="false" import="true" type="upgrade">
@@ -631,8 +1155,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="7107-3ebf-a89d-61df" name="Legio Osedax" hidden="false" targetId="3d5e-befa-28ee-7016" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="21e3-22df-4b4f-0ea7" name="Legio Oberon (Death Bolts II)" hidden="false" collective="false" import="true" type="upgrade">
@@ -649,8 +1173,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="554c-64bd-6237-86f8" name="Legio Oberon" hidden="false" targetId="4b3f-1b68-951d-bf82" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="08b2-4af1-2405-c6f0" name="Legio Venator (Iron Spiders)" hidden="false" collective="false" import="true" type="upgrade">
@@ -670,8 +1194,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="f491-8e1d-80c2-a2d9" name="Legio Venator" hidden="false" targetId="f038-74dc-4923-fc6a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddd0-9547-d8a7-e181" name="Legio Lysanda (Sentinels of the Edge)" hidden="false" collective="false" import="true" type="upgrade">
@@ -688,8 +1212,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         <categoryLink id="5073-3b21-aee0-c3a1" name="Legio Lysanda" hidden="false" targetId="1db3-407e-4eed-1877" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="94f0-df8b-3b1f-42f0" name="Myrmidon Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -754,8 +1278,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="411d-b82c-116c-8d1d" name="Venator Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -809,8 +1333,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ea7-d1fd-6570-fca1" name="Corsair Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -875,8 +1399,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ff72-4f14-4a14-6b00" name="Janissary Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -930,8 +1454,8 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8208-aa3b-9062-86c2" name="Regia Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -976,8 +1500,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10ad-12a6-8340-752b" name="Lupercal Light Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1006,8 +1530,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="59a2-e0d7-dea7-ebdb" name="Fortis Battle Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1078,8 +1602,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2921-b88e-4539-27ba" name="Ferrox Light Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1133,8 +1657,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6936-6654-fa29-752f" name="Arcus Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1169,8 +1693,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="addf-1c49-b1a5-b4f6" name="Ruptura Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1235,8 +1759,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5e0e-af39-9e3b-a819" name="Mandatum Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1271,8 +1795,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3c6d-da2f-7dde-d4d8" name="Perpetua Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1343,8 +1867,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd0d-5c00-4d91-858a" name="Extermigus Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1379,8 +1903,8 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d762-f789-76d1-b9c1" name="Firmus Light Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1436,8 +1960,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e20-fc99-be44-e138" name="Dominus Battleforce Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1510,8 +2034,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8f0-04c1-f75d-df5f" name="Precept Battleline Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1558,8 +2082,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1610-fc85-84d2-2580" name="Ignus Light Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -1588,8 +2112,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fbf7-00ce-3179-27ec" name="Revelator Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -1616,8 +2140,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="30d5-53d4-f6f4-dd0d" name="Warmaster Titan" hidden="false" targetId="9c6f-19e0-d1f0-cbbf" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3247-201e-15ea-0db5" name="Suzerain Class Plasma Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -1643,8 +2167,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="1edd-00b0-00bf-b2a1" name="Warmaster Titan" hidden="false" targetId="9c6f-19e0-d1f0-cbbf" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="70.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="70.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e025-d8bb-50a2-7ca7" name="Apocalypse Missile Array" hidden="false" collective="false" import="true" type="upgrade">
@@ -1670,8 +2194,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="711c-242e-72c3-5185" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a4ff-9243-18bf-6f7a" name="Plasma Blastgun (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1697,8 +2221,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="e972-dd75-bac0-4380" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="40.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c5f-60b5-31e2-e2c8" name="Turbo Laser Destructor (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1724,8 +2248,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="60d5-6cb9-9a10-6a58" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="068c-99b5-70a1-d8a0" name="Vulcan Mega-bolter (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1751,8 +2275,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="e350-a860-201f-2565" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="992e-ff87-7e56-409a" name="Inferno Gun (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1778,8 +2302,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="fb94-40de-4b03-c094" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b17-2322-e4d0-5253" name="Melta Cannon (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1805,8 +2329,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="ae0d-078f-5c5f-886d" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c722-1cea-ea9c-d73d" name="Belicosa Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1832,8 +2356,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="e16c-bcd0-a5ec-821b" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e2a2-e5ab-1b5a-cb80" name="Macro-gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -1859,8 +2383,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="e158-ad74-384f-508f" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c38-0d09-1e45-2a3c" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1886,8 +2410,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="d5d9-ea16-a0d6-bb2d" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="45.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="256f-3077-c86a-4cad" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1913,8 +2437,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="4546-4979-3c83-1dbc" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a14-1f5a-3f89-03c7" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -1940,8 +2464,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="cbc6-a709-0554-dcfc" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e26-d4f1-fc0e-f7b0" name="Paired Turbo Laser Destructors" hidden="false" collective="false" import="true" type="upgrade">
@@ -1967,8 +2491,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="d2fc-782d-4b5b-a452" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="35.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b9a9-2e68-afdf-560c" name="Paired Gatling Blasters" hidden="false" collective="false" import="true" type="upgrade">
@@ -1994,8 +2518,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="0c0d-8033-8a06-76b4" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="541a-838b-b35d-d124" name="Paired Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
@@ -2021,8 +2545,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="dc73-9527-f557-58f4" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c6b4-ca7c-1c9e-aa8b" name="Vulcan Mega-bolter Array" hidden="false" collective="false" import="true" type="upgrade">
@@ -2048,8 +2572,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="163d-f189-f0a2-0f6b" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="caba-2008-1d24-3704" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
@@ -2075,8 +2599,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="9282-8fea-a880-6c67" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="61ff-d5fa-df65-f00a" name="Belicosa Volcano Cannon (Warbringer)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2102,8 +2626,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="33ce-70d0-3657-6874" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d50-d75a-0b26-288c" name="Mori Quake Cannon (Warbringer)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2129,8 +2653,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="8d95-38c1-91cc-b8ad" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8232-57c0-2d72-4fa1" name="Gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -2157,8 +2681,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="e1bc-9f93-85f2-4d82" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2826-28b1-6da9-2c18" name="Reaver Chainfist" hidden="false" collective="false" import="true" type="upgrade">
@@ -2184,8 +2708,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="3ea3-2b7d-3209-320c" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="97c4-182d-fa1d-ed3c" name="Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2212,8 +2736,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="6ca4-d127-9a60-7f9f" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="35.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="35.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f02a-69d7-7fb7-0a2d" name="Toxin Node Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2240,8 +2764,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="c575-a28d-ed5e-3705" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="45.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="45.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="945a-1dac-1823-d746" name="Reaver Power Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -2267,8 +2791,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="9f58-5400-0b3e-d2eb" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="855b-7af0-c1a1-7401" name="Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -2295,8 +2819,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="2d74-bda5-571e-a649" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e94-516c-1a71-a320" name="Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2322,8 +2846,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="aa72-5dd9-cc1b-a896" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="277a-25d2-c4c6-42d1" name="Warp Missile Support Rack" hidden="false" collective="false" import="true" type="upgrade">
@@ -2350,8 +2874,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="dad5-7ad0-0c2e-73ab" name="Limited" hidden="false" targetId="e876-d792-6f03-a1a2" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d196-0233-c41f-1b70" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -2377,8 +2901,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="c4c5-f737-d805-34e0" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea05-e2f2-6e48-6ba6" name="Vulcan Mega-bolter (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2404,8 +2928,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="0d4e-632e-c7de-c3d8" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f8c-9135-763c-48eb" name="Inferno Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2431,8 +2955,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="2940-5fb9-fc25-b57d" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bdcf-8a0a-ffde-6415" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -2458,8 +2982,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="5dc1-7af7-e47e-16ff" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2fb7-4a02-7ff6-7bdf" name="Turbo Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -2485,8 +3009,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="c8c7-0caf-90de-3be0" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b9ec-570e-95bb-8a2d" name="Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2512,8 +3036,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="6956-51bc-2ef1-9461" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac8f-f5de-64e0-e92f" name="Ursus Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -2539,8 +3063,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="4338-3e45-52ac-6936" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e4ea-7689-5192-da72" name="Natrix Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -2566,8 +3090,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="783d-a61f-592d-861b" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6de1-4a2b-ba0d-f48b" name="Warhound Titan" hidden="false" collective="false" import="true" type="model">
@@ -2631,8 +3155,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="180.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="180.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a16c-3642-6059-d347" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
@@ -2702,8 +3226,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="250.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="250.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b99f-0913-d308-c0c8" name="Warlord Titan" hidden="false" collective="false" import="true" type="model">
@@ -2769,8 +3293,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="385.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="385.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="48db-a291-ca1c-8f79" name="Princeps Seniores" hidden="false" collective="false" import="true" type="upgrade">
@@ -2797,38 +3321,38 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
               <selectionEntries>
                 <selectionEntry id="3e1b-0c49-fdd7-d627" name="1 - Dominant Strategist" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="42d6-b2cf-65ed-adc4" name="2 - Iron-clad Tyrant" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2a56-fcf9-8df2-73c9" name="3 - Swift Killer" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3373-6fb6-4c0f-51fc" name="4 - Devoted Servant of the Machine God" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d648-c38f-b66a-aff1" name="5 - Favoured by Fortune" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="cc03-5032-2768-f5ca" name="6 - Will of Iron" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2852,20 +3376,20 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
               <selectionEntries>
                 <selectionEntry id="471e-8c29-157d-05a9" name="1 - Hero of the Crusade" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8649-106e-79c8-4f1c" name="2 - Reckless Hubris" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1e13-7e3e-1eb2-a8ba" name="3 - Ancient MIU" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2889,20 +3413,20 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
               <selectionEntries>
                 <selectionEntry id="6621-5802-11b9-3182" name="3 - Immovable Bastion" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d325-f870-499c-c60d" name="2 - Diligent" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0c8f-fd0a-514e-c054" name="1 - Steadfast" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
-                    <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-                    <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+                    <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+                    <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2911,8 +3435,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="07ae-2d3b-93d2-fd59" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="model">
@@ -2982,8 +3506,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="325.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="325.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="58b6-139c-33d4-4c68" name="Warmaster Titan" hidden="false" collective="false" import="true" type="model">
@@ -3065,8 +3589,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="850.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="850.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="945f-e9d7-56ac-efa4" name="Infusive Supercoolant" hidden="false" collective="false" import="true" type="upgrade">
@@ -3075,8 +3599,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="f95f-7807-7ba9-724f" name="Warmaster Titan" hidden="false" targetId="9c6f-19e0-d1f0-cbbf" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d93a-9e99-603c-e08c" name="Plasmatic Locomotors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3085,8 +3609,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="03f1-f04f-fccf-3f14" name="Warmaster Titan" hidden="false" targetId="9c6f-19e0-d1f0-cbbf" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f8b-8106-bae4-0c3b" name="Loyalist" hidden="false" collective="false" import="true" type="unit">
@@ -3094,8 +3618,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="f07d-1452-7dd3-d590" name="New CategoryLink" hidden="false" targetId="a1bf-302d-7589-b7ca" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d794-8aa4-0e80-9a46" name="Traitor" hidden="false" collective="false" import="true" type="unit">
@@ -3103,8 +3627,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="ea0a-7157-e157-ba56" name="New CategoryLink" hidden="false" targetId="a1bf-302d-7589-b7ca" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="76e0-c0ca-78ab-820d" name="Blackshield" hidden="false" collective="false" import="true" type="unit">
@@ -3112,8 +3636,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="3971-eded-f31c-a24e" name="New CategoryLink" hidden="false" targetId="a1bf-302d-7589-b7ca" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fc0-262f-1456-ac91" name="Allegiance" hidden="false" collective="false" import="true" type="unit">
@@ -3130,8 +3654,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <entryLink id="fc8a-2f2d-aa96-33a7" name="Blackshield" hidden="false" collective="false" import="true" targetId="76e0-c0ca-78ab-820d" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fac9-4a14-fdba-74e9" name="Legio Audax (Ember Wolves)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3148,8 +3672,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="45b4-8d6b-9347-862b" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ba0-2142-b2b4-3574" name="Legio Damicium (Unbroken Lords)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3166,8 +3690,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="95d4-8f90-89ad-47ea" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5d1-0561-4a42-6621" name="Legio Fureans (Tiger Eyes)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3184,8 +3708,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="a87b-ac3a-50a0-626a" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="737e-5b06-78f4-06b7" name="Legio Infernus (Fire Masters)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3199,8 +3723,8 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="2b98-f027-2d73-4d34" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f986-1881-e814-c937" name="Legio Interfector (Murder Lords)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3221,8 +3745,8 @@ with the Melee trait.
         <categoryLink id="00e9-ef93-07c4-1b33" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b056-1be7-09ea-128e" name="Legio Krytos (God Breakers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3237,8 +3761,8 @@ mandatory components.</description>
         <categoryLink id="d1d0-ddc2-1c83-2edf" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e2d6-2e99-9c13-763f" name="Legio Kulisaetai (Gatekeepers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3252,8 +3776,8 @@ mandatory components.</description>
         <categoryLink id="a5db-8ed3-6e45-6e07" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1fc2-0b1c-64f5-006d" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3270,8 +3794,8 @@ mandatory components.</description>
         <categoryLink id="493d-a928-ebf8-0bfd" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="100f-d15b-518c-356d" name="Legio Magna (Flaming Skulls)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3285,8 +3809,8 @@ mandatory components.</description>
         <categoryLink id="3138-1d9a-36e2-360c" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d3d1-d485-4d79-42ab" name="Legio Mordaxis (Deathdealers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3303,8 +3827,8 @@ mandatory components.</description>
         <categoryLink id="a667-af62-0baa-3f73" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8612-cc7f-b381-b329" name="Legio Mortis (Death&apos;s Heads)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3322,14 +3846,14 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="c841-9931-6a5b-5cbf" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="02e8-da60-bf25-2b69" name="Legio " hidden="false" collective="false" import="true" type="upgrade">
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd61-da04-0645-eea2" name="Legio Tempestus (Storm Lords)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3346,8 +3870,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="6aa3-7ed8-daad-12a7" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcfa-8866-6e78-431b" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3364,8 +3888,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="b4f0-39fe-4e50-72a2" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d7af-0403-04dd-57d7" name="Legio Vulcanum (Dark Fire/Lords of Ruin)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3382,8 +3906,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="57e3-8954-af1c-c9db" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e4b7-4ef4-bca1-565f" name="Legio Vulpa (Death Stalkers)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3397,8 +3921,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="fd08-f188-5d83-968a" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a259-a7a2-8c6e-b31b" name="Legio Vulturum (Gore Crows)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3412,8 +3936,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="3239-a974-7da6-4884" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0166-a4a8-172c-ff06" name="Audax Ursus Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -3439,8 +3963,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="0df6-be69-25b2-356e" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f612-9ca2-a28c-303f" name="Toxin Node Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -3466,8 +3990,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="dd13-a868-0f28-d4b5" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a13-910f-c11e-48f5" name="Toxin Node Plasma Blastgun (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3493,8 +4017,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="eae0-15df-1956-85bc" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="60.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="60.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ffa7-8406-13de-a16f" name="Toxin Node Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3521,8 +4045,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="9679-e9bb-6412-87e6" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9407-8596-1e27-e0a3" name="Toxin Node Melta Cannon (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3548,8 +4072,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="2632-15dc-f635-2cff" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="50.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="64e7-6a07-b748-97fe" name="Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3576,8 +4100,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="7cc3-471a-d6a7-8ca6" name="Nemesis Warbringer Titan" hidden="false" targetId="3d75-4b7c-12a4-dd96" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9cbf-f417-c0db-795e" name="Chasmata Laser Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -3604,8 +4128,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="c5fd-f0bf-e82e-54b6" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="40.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8b9-6be7-cd9c-74e3" name="Chasmata Turbo Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -3631,8 +4155,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="844f-8713-5d05-8171" name="Warhound Titan" hidden="false" targetId="e979-ac45-7461-dec1" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2499-4e36-295e-ac95" name="Chasmata Turbo Laser Destructor (Reaver)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3658,8 +4182,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="cc84-180e-0a25-2e56" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a82-87c3-cbc6-b20b" name="Chasmata Turbo Laser Destructor (Warmaster)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3685,8 +4209,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="a8dd-7501-3d16-a2fe" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="40.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="40.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b1e-3229-90e3-4f6c" name="Paired Chasmata Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
@@ -3712,8 +4236,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="87c4-d690-d3ca-b26a" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="80.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="80.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc73-965a-8c4c-2745" name="Paired Chasmata Turbo Laser Destructors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3739,8 +4263,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="7a8b-855f-fa22-d801" name="Weapon" hidden="false" targetId="09b9-9f39-3c76-7ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="55.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e3a5-0dcc-c37e-14c5" name="Legio - None" hidden="false" collective="false" import="true" type="upgrade">
@@ -3749,8 +4273,8 @@ Damage effects, it may not allocate any Repair dice to its Head.</description>
         <categoryLink id="62d1-e4e6-9a2c-a02c" name="New CategoryLink" hidden="false" targetId="4480-a9c7-a9d2-4b11" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eccb-c41a-b3bd-ee8b" name="Canis Light Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -3781,8 +4305,1037 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-        <cost name="Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5cbf-48d7-7df8-873b" name="Stratagems" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c515-2eda-e481-38c4" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c830-1547-d4de-5bef" name="[Astorum] Machine Defiance" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="b6c3-881f-062d-ac8b" name="[Astorum] Machine Defiance" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astorum player. Play this Stratagem when a Titan’s void shields collapse. Immediately roll a number of D6 equal to the Titan’s Servitor Clades characteristic. For each roll of 5 or 6, restore the Titan’s Void Shield level by 1. Note, this is not a Repair roll and does not benefit from any effects which influence or modify Repair rolls.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f9d1-8611-b784-56e5" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="05c0-3a99-cc16-0909" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a0b-8fc2-b985-9eca" name="Artillery Bombardment" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="6483-349f-2d85-5154" name="Artillery Bombardment" hidden="false">
+          <description>Play this during each Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield, then scatter it D10&quot;. Any unit touched by the marker where it eventually lands suffers a Strength 8 hit, or two Strength 8 hits if the central hole of the Blast marker is entirely over its base.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5e79-2e78-aebc-dc24" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0596-8fb4-1516-cf9d" name="Orbital Lance Strike" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="8906-6ef4-0b9b-68b1" name="Orbital Bombardment" hidden="false">
+          <description>Once per battle, play this during the Strategy phase. Place the 3&quot; Blast marker anywhere on the battlefield, then scatter it D6&quot;. Any unit touched by the marker where it eventually lands suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="180e-c565-ac61-ad6e" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1b8-ea79-9611-3889" name="Blind Barrage" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="3f8a-0348-8049-68dd" name="Blind Barrage" hidden="false">
+          <description>Once per battle, play this during the Strategy phase. Pick a unit on the battlefield. Any attacks that target it or are made by it suffer a -2 To Hit penalty for the duration of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a7d4-497b-fff7-eaf6" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6020-cdeb-fb1b-7581" name="Noble Sacrifice" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="0a6e-1a7f-2f6a-4d16" name="Noble Sacrifice" hidden="false">
+          <description>A player can enact this Stratagem during the Strategy phase. To do so, they pick a Titan from their force whose structure has been compromised and roll a D6. Add 1 to the result if its Reactor Status marker is in a hole with an orange indicator, or add 3 to the result if it is in a hole with a red indicator. The Titan suffers a Magazine Detonation on a result of 1-4, or a Catastrophic Meltdown on a result of 5-6 (see the Catastrophic Damage table).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="289c-5542-83ca-2401" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a111-216f-6196-f92a" name="Outflank" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="9ac4-0a31-eeba-3e77" name="Outflank" hidden="false">
+          <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit’s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest of its battlegroup). Write down which of the battlefield’s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued Orders.
+
+At the start of the Movement phase of the first round, the unit appears on long range auspex – reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc of its base is touching the chosen flank. It cannot move any further during the phase.
+
+If a player’s battlegroup contains any Squadrons, they can choose this Stratagem more than once, as long as each outflanking unit is part of the same Squadron.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="dd2e-90ec-bea7-a8bc" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7702-457c-dcb6-0a8b" name="Sabotage" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="bcc9-8cfa-00b0-c54d" name="Sabotage" hidden="false">
+          <description>Play this Stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice – the unit immediately takes the Order shown. If it cannot be issued that Order, only its current Order is removed – no new Order is given.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b31b-d2fa-4427-0a30" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f1a-ec89-e799-0404" name="Thermal Mines" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="a7e6-02fe-1eb9-5512" name="Thermal Mines" hidden="false">
+          <description>Play this Stratagem immediately after an enemy unit finishes moving or making a turn. Roll a D6. On a 2 or more, that unit suffers D3 Strength 8 hits; a Titan takes these hits to its Legs. Shield saves cannot be made against the hits. On a 1, nothing happens but the Stratagem is not discarded and can be played again in a subsequent round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2448-b27e-9687-2e12" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e3f-5b50-7c02-ce15" name="Voidbreaker Field" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="d185-621d-614b-f4d4" name="Voidbreaker Field" hidden="false">
+          <description>Play this Stratagem immediately after an enemy unit with active void shields finishes moving or making a turn. Roll a D6. On a 2 or more, the opposing player must immediately make a number of Shield saves equal to the number rolled on the D6. On a 1, nothing happens but the Stratagem is not discarded and can be played again in a subsequent round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f793-2039-07e4-c97b" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb26-2609-02d4-d5d7" name="Experimental Weapon" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="cad1-b571-69ac-f194" name="Experimental Weapon" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans and places a marker next to its Command Terminal. Then, randomly choose one of the Titan’s weapons. For the duration of this battle, the selected weapon gains the Maximal Fire trait, though must always declare that it is using this Trait each time it fires. If the weapon already has the Maximal Fire trait, select another weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="767f-bc3d-afb3-a050" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f29c-45f1-bf31-5902" name="Dawn Attack" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="fd9f-3cb0-fa14-22ae" name="Dawn Attack" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. For the first two rounds of the game, darkness cloaks the battlefield. Titans must roll (D6+1) x5 to determine how many inches they can see – only enemies within this range can be targeted. Titans that shot earlier in the round can be targeted, regardless of the distance an attacker can see.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="95ff-38fc-dd79-b2fd" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5f33-1b82-06dd-e44c" name="Cursed Earth" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e90d-b9e1-ee9f-9b21" name="Cursed Earth" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The battlefield is heavily irradiated, making shields less effective. Titans must roll an extra dice when making Void Shield saves, while Knight Banners count the Strength of attacks as one higher for the purposes of working out their Ion Shield saves.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6d2d-3ae8-25bd-947a" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f1e-ff47-7b04-afab" name="Vox Blackout" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="8cfb-7c3b-786a-0553" name="Vox Blackout" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. The Strategy phase immediately ends and all Orders are removed, with the exception of Shutdown orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="cca1-0e0a-e9ff-023e" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d461-02cf-f753-1e22" name="Auspex Bafflers" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="32b6-6aee-0ca5-0c80" name="Auspex Bafflers" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans or Knight Banners. Until the end of the round, the chosen unit increases the To Hit roll penalty for being obscured by 1, i.e., -2 To Hit if at least 25% of the unit is obscured, or -3 To Hit if at least 50% of the unit is obscured.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ae43-468d-cc7d-2e46" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="42f6-8dbf-5355-e738" name="Ablative Armour" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="8b03-2764-af64-6ed8" name="Ablative Armour" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans and places a marker next to its Command Terminal. The first Direct, Devastating or Critical Hit suffered by the Titan is ignored. Then discard this Stratagem.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c627-ef97-e511-fbbc" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4029-6e0f-a705-4e89" name="Overcharged Cannon" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="f4cb-3d63-edee-c8c6" name="Overcharged Cannon" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans armed with a weapon with the Maximal Fire trait. Place a marker next to the Titan’s Command Terminal and select one of its weapons with the Maximal Fire trait. Until the end of the battle, the Titan can fire this weapon on Super Maximal Fire. This works in exactly the same way as the Maximal Fire trait, except that the weapon’s Strength is increased by 4 instead of 2.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a37e-89c3-596a-586f" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fcbb-8ee7-2015-9d20" name="Secutarii Battalion" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="9de4-e5d1-da6e-23c6" name="Secutarii Battalion" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in each Strategy phase. Any enemy units with a Scale of 3 or less immediately suffer D6 Strength 3 hits if they are within 2&quot; of one of the player’s Titans.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="633e-81d4-9110-5ba1" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a7d-e53f-bd86-bfcd" name="Wages of Betrayal" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="6f50-bfac-d37e-756d" name="Wages of Betrayal" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of the round, enemy Titans suffer a -2 penalty to Command checks. Any enemy Princeps Seniores suffers a -3 penalty to Command checks instead.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f6f0-6de0-08ba-7c4b" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc10-c493-6b4d-488d" name="Endurance of Terra" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="61e3-ef84-8932-c46a" name="Endurance of Terra" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem when one of the player’s Titans suffers Critical Damage. The player rolls a D6. On a 3+, the damage is ignored. Otherwise, nothing happens but the Stratagem is not discarded and can be played again in a subsequent round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="df7a-b43c-811f-fa2f" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="64fb-ff33-f3f7-feec" name="Great Crusade Titans" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e5ee-a99b-0780-b535" name="Great Crusade Titans" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of the round, the player’s Titans add 2 to Command checks when issuing Charge orders. In addition, when moving under Charge orders the player’s Titans count as moving 6&quot; further than they actually moved for the purposes of working out additional Attack dice.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0ff2-f19d-2fc4-0be6" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf2c-3508-5b00-eee2" name="The Long Retreat" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="9a98-5b19-1f19-058b" name="The Long Retreat" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem in any Strategy phase. For the duration of this round, the player’s Titans do not halve their Speed when moving outside of their Front arc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7dbb-abf0-c46c-f4cf" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3bc8-fefc-43de-5eb5" name="Martian Servitor Clades" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="35e8-845f-2aa9-9068" name="Martian Servitor Clades" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem at the beginning of any Damage Control phase. Until the end of the Strategy phase, each of the player’s Titans adds two Repair dice to their Servitor Clades. In addition, if the player’s opponent is fielding any Legio Mortis or Legio Tempestus Titans, they may re-roll any results of 1 on the Repair dice.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e3b5-830f-a043-572a" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3dde-35da-aff8-fda6" name="Strafing Run" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="700f-2f6b-4ac4-02db" name="Strafing Run" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. A squadron of fighter-bombers scream across the battlefield, attacking everything in their path. Choose one of the four edges of the battlefield and pick a point on that edge. Then pick a point on any other edge of the battlefield and draw an imaginary line 1mm wide between the two. Any unit under this line, or within 2&quot; of it, takes D3 Strength 6 hits. The arc from which the hits originate is determined by the direction the line is travelling. Determine which arc the first chosen point is within for each unit hit and resolve the hits against that arc.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0c6f-006d-ec9a-cbd2" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70d8-1e11-4565-ce8f" name="Scatterable Mines" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="289a-89de-f71f-8069" name="Scatterable Mines" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. Place a marker anywhere on the battlefield then scatter it D10&quot;. The area within 6&quot; of this marker counts as Dangerous terrain. Remove the marker at the end of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="dd02-80f7-4a92-81bd" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="27f5-7866-70e3-fd84" name="Static Rain" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="261b-1061-6c48-3a85" name="Static Rain" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. Place a marker anywhere on the battlefield. Any Titan within 12&quot; of this marker must immediately make D3 Void Shield saves. Knight Banners within this range cannot make Ion Shield saves for the remainder of the round, even if they subsequently move out from the marker’s radius of effect. Remove the marker at the end of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8e63-1165-5b72-be57" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2a8-46cc-9457-c60a" name="Earthshaker Mines" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="7dde-69eb-91de-f5a4" name="Earthshaker Mines" hidden="false">
+          <description>Play this Stratagem immediately after an enemy unit finishes moving or making a turn. Roll a D6. On a 2 or more, that unit suffers D3 Strength 6 hits; a Titan takes these hits to its Legs. Shield saves cannot be made against the hits. In addition, the unit is then moved D6&quot; in a direction determined by the Scatter dice (this may result in a Collision – see the Adeptus Titanicus rulebook). This does not change the unit’s facing. On a 1, nothing happens but the Stratagem is not discarded and can be played again in a subsequent round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="66ef-cab7-2efb-04a8" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8937-e617-5f46-7b39" name="Quake Shells" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="4c58-4a09-8b12-beb2" name="Quake Shells" hidden="false">
+          <description>Play this during any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield then scatter it D10&quot;. Any unit touched by the marker where it eventually lands suffers D3 Strength 6 hits, or D6 Strength 6 hits if the central hole of the Blast marker is entirely over its base. In addition, the unit is then moved D6&quot; in a direction determined by the Scatter dice (this may result in a Collision – see the Adeptus Titanicus rulebook). This does not change the unit’s facing.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a8fb-9b9d-d20f-3ede" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="97a2-15f4-c5a4-6bca" name="Haywire Barrage" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="4603-aaee-198e-a835" name="Haywire Barrage" hidden="false">
+          <description>Play this card during any Strategy phase. Place a marker anywhere on the battlefield then scatter it D10&quot;. Roll 2D6 for each Titan within 6&quot; of the marker. If the roll is equal to or greater than their Scale, they take 1 point of Critical Damage to a random location, ignoring shields. If the location is a weapon, it is disabled. If the location is a disabled weapon or already has 3 points of Critical Damage then the barrage has no effect. Knight Banners hit by a Haywire Barrage take D3 Strength 7 hits that ignore ion shields instead.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c688-0182-6898-f3f3" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8948-c9e8-722d-e486" name="Dusk Attack" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="4dad-603a-3eb5-5eec" name="Dusk Attack" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. During the End phase of Turn 3, the First Player must roll (D6+1) x5 to determine how many inches every unit on the battlefield can see for the remainder of the battle – only enemies within this range can be targeted by an attack. Units that have made an attack with a weapon without the Melee trait previously in a round can be targeted, regardless of the distance a unit can see.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a502-09f7-e247-a473" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7d2-857c-415a-bb7f" name="False Intel" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="9735-5b06-5041-3502" name="False Intel" hidden="false">
+          <description>Play this Stratagem after all objectives have been deployed. Pick any objective on the battlefield. Move that objective D6&quot; in any direction – this can take it outside its normal deployment area. The objective cannot be moved off the board, nor can it overlap with a piece of Blocking terrain.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="67bd-d087-ee83-45c9" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa27-6bcc-489a-3092" name="Reactor Surge" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="8649-2457-c80e-f8ad" name="Reactor Surge" hidden="false">
+          <description>Play this Stratagem when activating a friendly Titan in the Combat phase. If the chosen Titan has a Shield level of X, this Stratagem is immediately discarded. Otherwise, increase the Titan’s Reactor Status level by any numbers of holes – you cannot voluntarily advance it further than the end of the Status tracker. For each hole the marker is moved along the Reactor Status level, repair the Titan’s Void Shield level by 1. This counts as the Titan’s activation for this round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d36f-4f2a-20fc-3d8d" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="868b-a5b6-3748-43f4" name="Partial Shutdown" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="f688-bdc1-0394-71fb" name="Partial Shutdown" hidden="false">
+          <description>Play this Stratagem at the start of any Movement phase. Choose a friendly Titan to initiate Partial Shutdown. The chosen Titan is immediately issued Shutdown orders, replacing any Order previously given. The void shields of a Titan that has initiated a Partial Shutdown do not collapse. In addition, a Titan issued Shutdown orders as part of Partial Shutdown Stratagem reduces its Reactor level by 1 instead of 2 during the Damage Control phase and Reactor rolls can be made for the Titan if forced to do so. Barring these exceptions, a Partially Shutdown Titan follows all other normal rules for the Shutdown order as described in the Adeptus Titanicus rulebook until the Shutdown orders issued by this Stratagem are discarded.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="920c-bd35-9243-95c7" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c2c-e1ec-d420-fc4f" name="Tactical Assessment" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="9f6f-a5fc-8a7f-c38f" name="Tactical Assessment" hidden="false">
+          <description>Play this at the end of the deployment phase, before rolling to see who is the First Player. The player may immediately discard their current objective and determine a new one by rolling two D6 on the Mission Objective table as described in the Adeptus Titanicus rulebook.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="03ce-5bc4-ce8d-a2fd" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae1e-4588-ded0-2364" name="Last Ditch Effort" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="f100-91e0-3516-85c7" name="Last Ditch Effort" hidden="false">
+          <description>Play this Stratagem when a friendly Titan falls due to the Laid Low or Wild Fire Catastrophic Damage effect. The controlling player may choose the direction the Titan falls, rather than determining it by rolling a Scatter dice. If, for whatever reason, both players are allowed to choose the direction the Titan falls, randomly determine the direction as normal and discard this Stratagem.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a1bd-a3d9-c4aa-5491" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e5a-1604-1fcc-7875" name="Iron Resolve" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e0bb-37e7-e5d4-034b" name="Iron Resolve" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem when a Titan fails a Command check during the Strategy phase or when a Knight Banner fails a Command check to see if they become Shaken in any phase. That check is passed instead. This Stratagem can be purchased multiple times.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6675-3729-d277-374a" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8442-cea2-9f20-8297" name="EMP Discharge" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="28bc-3acd-6686-7a27" name="EMP Discharge" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem during any Movement phase or Combat phase. Pick a friendly Titan that has active void shields. Every Titan that has active shields within 3&quot; of that Titan suffers a number of S4 hits equal to the Void Shield level of the chosen Titan, as if resolving an attack from a Shieldbane weapon. After resolving these hits, the chosen Titan’s Void Shield level is reduced to X.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2a9c-3662-85cd-cb6b" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b7e0-9860-994c-382f" name="Only Forwards" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e01c-4666-6a16-85a6" name="Only Forwards" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem at the start of any Strategy phase. For the remainder of that phase, any unit may be issued Full Stride or Charge orders without the need to make a Command check.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c311-18fb-6878-0860" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d32d-def2-eef4-cdbc" name="Even in Death" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="c4db-f856-67f9-594f" name="Even in Death" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem when a friendly Titan suffers Catastrophic Damage, before rolling on the Catastrophic Damage table. Instead of rolling on the table, roll a D6. On 1-4, the Titan suffers the Magazine Detonation result, and on a 5+ the Titan suffers the Catastrophic Meltdown result. Add 1 to the result of the Titan’s Reactor Status marker is in a hole with an orange indicator and add 3 if it is in a hole with a red indicator.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a0aa-540d-17fa-dec9" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3305-b44f-acaf-c0bf" name="Weapons to Full" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="f90b-70e2-5ac7-af45" name="Weapons to Full" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this Stratagem during the Combat phase. Select a friendly Titan. That Titan may immediately attack with any/all of its weapons even if it has already been activated in the Combat phase that round. After resolving each weapon attack, the Titan rolls a D10 on the Reactor Overload table.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2b1a-e1cc-bc02-dff0" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a32e-ccfe-6226-b0da" name="Sacrificial Lock-on" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="db9a-acf3-2e84-5aca" name="Sacrificial Lock-on" hidden="false">
+          <description>This Stratagem can be purchased by any Loyalist player. Play this at the start of any Combat phase. Place the 5&quot; Blast marker so that the central hole is entirely over a friendly model’s base. Any unit touched by the marker suffers D3 Strength 10 hits, or 2D3 Strength 10 hits if the central hole of the Blast marker is entirely over its base. This attack does not ignore void shields, even if the friendly model the marker is centred over is within 2&quot; of a Titan with active shields.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e9d8-303d-933b-b917" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="35fa-a217-7a34-4939" name="Concealment Barrage" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="5132-ed36-4f66-55f5" name="Concealment Barrage" hidden="false">
+          <description>Play this Stratagem at the start of any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield. Any part of the battlefield underneath the template blocks line of sight. Remove the Blast marker at the end of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="09ef-fbd6-a71d-5b45" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="09ea-6d5a-dfc2-7669" name="MIU Link" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="86ab-fa32-8750-a1de" name="MIU Link" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses two of their Titans to link MIU. For the remainder of the game, when making a weapon attack, you may measure from either linked Titan for the purposes of determining the Accuracy value for Short or Long range. If either of the linked Titans suffers the MIU Feedback Critical Damage effect, both Titans suffer it and the MIU Link Stratagem is ignored for the remainder of the game, even if the damage is repaired.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f7b3-a533-f14f-5c7f" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="430b-b5b9-6986-8f5a" name="Augmented Servitor Clades" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="4943-ca60-8b42-43bc" name="Augmented Servitor Clades" hidden="false">
+          <description>Play this Stratagem during the first Strategy phase of the game. The player chooses one of their Titans to have a Senior Enginseer aboard. Increase the Servitor Clades of that Titan by 1 during each Damage Control phase for the remainder of the battle. Note, this does not affect Repair rolls made as part of the Emergency Repairs order.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="59db-78fe-23dc-4c11" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="901f-704b-7304-03b3" name="Veteran Princeps" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="dbad-e9ed-c279-eca3" name="Veteran Princeps" hidden="false">
+          <description>When this Stratagem is chosen, the player chooses one of their Titans that is not a Princeps Seniores’ Titan to be commanded by a Veteran Princeps. Add 1 to the result of any Command checks made when issuing an Order to the chosen Titan. This Stratagem can be purchased multiple times, but any Titan can only benefit from this Stratagem once.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fec6-23b5-03df-3c1d" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3eb-33c5-1c17-70d1" name="Shock Mines" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="f40b-b880-9a58-44d0" name="Shock Mines" hidden="false">
+          <description>Play this Stratagem immediately after an enemy Titan has finished moving or making a turn. That unit suffers D3 S5 hits to its Legs. Shield saves cannot be made against these hits. If that unit suffers any Direct, Devastating or Critical Hits from this Stratagem, the unit discards any Order it has and is immediately issued a Shutdown order. This Shutdown order is removed in the End phase of that round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6320-f1c9-0cbb-b2f7" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="42b6-c070-d5ba-3174" name="Tracer Cloud" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="fca2-d1e2-1d11-9986" name="Tracer Cloud" hidden="false">
+          <description>Play this Stratagem at the start of any Strategy phase. Place the 5&quot; Blast marker anywhere on the battlefield. A player may re- roll Hit rolls for attacks made against any unit underneath the marker. Remove the Blast marker at the end of the round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b4b3-0cbe-1c5b-b5ce" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa12-c5d1-eb32-ed16" name="Homing Warheads" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="2173-afaf-0188-9cec" name="Homing Warheads" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans armed with an Apocalypse missile launcher or paired Apocalypse missile launchers, so long as that Titan does not already have an upgrade affecting that weapon. Subtract 3 from the Dice Value of the weapon (to a minimum of 1). For the remainder of the game, attacks with that weapon do not suffer negative modifiers when attacking an obscured target or when attacking a target out of line of sight via the Barrage trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5367-20a6-bfe6-2ef2" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f3b-ae97-6641-d2b3" name="Enhanced Coolant" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="6e6f-2d94-5987-ad27" name="Enhanced Coolant" hidden="false">
+          <description>Play this Stratagem during any Strategy phase. The player chooses one of their Titans; for the remainder of the game, roll a D6 each time that Titan would increase its Reactor level. On a 5+, increase the Reactor level by one less hole than normal, to a minimum of zero holes (e.g., if two symbols were rolled on the Reactor Dice, a 5+ would increase the Reactor level by one, not two). If an effect results in multiple increases, such as rolling multiple 1s while using the Maximal Fire trait, roll individually for each increase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3f85-77ee-7011-b46c" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24ff-a46c-1c21-da7f" name="Redundant Systems" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="b6ba-3c6c-bbbb-7a75" name="Redundant Systems" hidden="false">
+          <description>Play this Stratagem in any Strategy phase. The player chooses one of their Titans; the first time Critical Damage is suffered by that Titan it is ignored – do not move the marker up the tracker. Any other effect, such as loss of Structure points, still occurs. If a Titan is forced to move the Critical Damage marker more than once for an attack, move it one fewer space. Then, discard this Stratagem.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f540-df3b-8481-a204" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c7de-7d47-8393-1224" name="Experimental Locomotors" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="0bce-dbe8-f23d-06d2" name="Experimental Locomotors" hidden="false">
+          <description>Play this Stratagem in the first Strategy phase of the game. The player chooses one of their Titans; for the remainder of the battle the Titan may use its boosted Speed characteristic without pushing its reactor. During every End phase roll a D10 for this Titan. On a 1, the Titan suffers a Devastating Hit to its Legs and this Stratagem is discarded.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6cfd-7d0b-cba4-ac74" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b93-e3cd-9af6-e266" name="Override Signal" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="bd6a-c3ae-080b-9b2e" name="Override Signal" hidden="false">
+          <description>Play this Stratagem when a Titan (friend or foe) within 12&quot; of a friendly Titan suffers Catastrophic Damage, before rolling on the Catastrophic Damage table. When rolling on the Catastrophic Damage table for the chosen Titan,
+add 4 to the result.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="439f-2a9f-bf4f-fcbd" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e25-5074-6d63-d43a" name="[Ignatum] Punish Their Folly" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="695f-0051-c63f-1f47" name="[Ignatum] Punish Their Folly" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Ignatum player. Play this Stratagem when an enemy Titan ends its move within 3&quot; of a Legio Ignatum Titan as part of a Charge order. Before any attacks are resolved, that Legio  Ignatum Titan can immediately make an attack using their Ballistic Skill with a weapon without the Melee trait.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9609-c23d-f06a-f484" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="9611-b4df-e2d9-ee0f" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7850-61dd-53c9-6b62" name="[Ignatum] Guard the Gates" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="fcf7-192d-bee2-fb75" name="[Ignatum] Guard the Gates" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Ignatum player. Play this Stratagem at the start of the first round’s Strategy phase. Until the end of the round, friendly Legio Ignatum Titans can be issued the First Fire order without the need to make a Command check.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ee74-069f-6145-2d6b" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="705f-9928-ec6b-4a95" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="65dd-b2e3-f95b-fcdd" name="[Astorum] Bounty of Mars" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="7f38-c328-3092-2aef" name="[Astorum] Bounty of Mars" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astorum player. Play this Stratagem at the beginning of the Damage Control phase of any round. Choose one type of critically damaged system or disabled weapon, i.e., Head, Body, Weapon, etc. For the duration of this Damage Control phase, the dice score required to repair this system is reduced by 1, i.e., if a dice result of 5 or 6 is normally required then for this phase, the player can use a dice result of 4, 5, or 6.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3aeb-9c86-6196-2d06" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="15fd-3e81-8681-4b84" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31f3-499f-ad7e-707d" name="[Defensor] A Day of Retribution" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="0840-c2f8-a313-607a" name="[Defensor] A Day of Retribution" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Defensor player. Play this Stratagem in the Strategy phase of the first round. Choose a single friendly Legio Defensor Titan. That Titan may immediately make an attack with one of its weapons. While resolving this attack, double the weapon’s Long range. Then, advance your Titan’s Plasma Reactor track three places. Once the effects of the attack have been worked out, begin the first game round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0c97-b661-c5c0-4a0c" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="d443-2a84-d4de-3901" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f1ec-6c59-a379-fd98" name="[Defensor] Blessings of the Emperor" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="ee4f-9e44-12a2-7c3d" name="[Defensor] Blessings of the Emperor" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Defensor player. Reveal this Stratagem when a hit would result in one of your Titans rolling on the Catastrophic Damage table. The hit is ignored and this Stratagem has no further effect.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e05e-8e74-6fb9-8b71" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="25c2-6e9a-885c-854e" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a852-206e-59b1-55d7" name="[Solaria] Fog of War" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="41fb-5dcc-f990-ffe5" name="[Solaria] Fog of War" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Solaria player. Play this Stratagem in the Strategy phase of the first round. The Legio Solaria player may redeploy a Warhound Titan. These redeployed units can be placed anywhere that they would normally be allowed to deploy by the mission being played. This Stratagem can be purchased multiple times.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="fede-3b9b-2017-8d9c" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="c9a2-03a2-dd6f-f7eb" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1024-7630-7cc0-6823" name="[Atarus] Impetuous Machine Spirit" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="02f1-77d4-2ffd-0817" name="[Atarus] Impetuous Machine Spirit" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Atarus player. Reveal this Stratagem when a Legio Atarus Titan would be required to make a roll on the Awakened Machine Spirit table (see the Adeptus Titanicus rulebook). Rather than rolling, the Legio Atarus player may instead choose to automatically apply the Impetuous result, rolling D6+2&quot; rather than D6&quot; to determine the distance moved.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="992f-7d7d-db75-6e3e" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="9ffe-a052-9156-349c" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f954-c6b5-0777-e899" name="[Atarus] Maniple of One" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="362b-57b1-72b7-c833" name="[Atarus] Maniple of One" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Atarus player. The Legio Atarus player may reveal this Stratagem at the beginning of any round. For the duration of that round, one Titan in their force may gain the benefits of any Maniple Trait normally available to Legio Atarus. Note that while this Stratagem is in effect, the chosen Titan loses any other Maniple Trait it might have and does not count as being a part of any other maniples.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="db6e-453d-c54d-8bb1" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="943d-1f41-beed-3b32" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f93-489f-a0c0-0a99" name="[Metalica] Harmony and Order" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="46b6-379c-a241-c572" name="[Metalica] Harmony and Order" hidden="false">
+          <description>This Stratagem can be purchased by a Legio Metalica player. Play this Stratagem when a Titan’s Machine Spirit awakens as a result of pushing its Reactor. The Machine Spirit is not awakened, in the same manner as if the Titan has passed its Command check.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ee01-ff96-9127-24f1" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="1e7c-c9b2-d421-bd35" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2460-a0d3-7863-19e9" name="[Astraman] Strength and Resolve" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="59f3-41a9-0af9-4e53" name="[Astraman] Strength and Resolve" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Legio Astraman player may reveal this Stratagem when activating a Titan during the Strategy phase. Until the beginning of the following round, attacks made against that Titan gain no bonus to Armour rolls as a result of damage already inflicted as indicated by the Command Terminal (see the Adeptus Titanicus rulebook). This counts as the Titan’s activation for that phase.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="1eac-e56f-eb33-2727" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="24f4-1c07-110f-6659" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5553-5428-23b5-dfea" name="[Praesagius] Precision Volley" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="8067-2d00-4762-eb61" name="[Praesagius] Precision Volley" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Praesagius player. Play this Stratagem at the start of the Strategy phase, before any Orders are issued. Until the start of the next round, add 1 to the Hit rolls of all attacks made by Legio Praesagius Titans when using a weapon’s Long range.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="aa5e-d7e1-7949-b5cb" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="4663-d8ef-41bc-74d0" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a7b4-3f05-3b24-01e4" name="[Astraman] Stand Firm" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="ec05-cc3c-8d98-c646" name="[Astraman] Stand Firm" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Astraman player. The Legio Astraman player may reveal this Stratagem at the beginning of any round. For the duration of that round, any friendly Legio Astraman Titan can merge void shields with any other friendly Legio Astraman Titans as if they were part of the same Squadron, so long as none of the Titans sharing void shields have moved this round (voluntarily or involuntarily).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e0cb-8cb6-5546-3a56" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="d67e-8047-a37c-3e64" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f257-77fd-b9aa-c55f" name="[Fortidus] For the Red Planet" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="94fc-420e-78e4-4438" name="[Fortidus] For the Red Planet" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Fortidus player. The Legio Fortidus player may reveal this Stratagem when activating a Titan. Until the beginning of the following game round, the Titan ignores the damage effects of Critical Damage to its Head, Body or Legs, as chosen by the player when the Stratagem is revealed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9ac8-1055-21d4-0889" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="1565-7eaf-26f3-7f71" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2eb2-4250-5f27-e79a" name="[Fortidus] Red Skies" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="f615-d101-a06f-50b6" name="[Fortidus] Red Skies" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Fortidus player. The Legio Fortidus player may reveal this Stratagem when one of their Titans suffers a Magazine Detonation or Catastrophic Meltdown result on the Catastrophic Damage table (see the Adeptus Titanicus rulebook). When resolving the Catastrophic Damage effects, add 5 to the Titan’s Scale.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="3c63-e225-1a94-e44d" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="6b18-aad0-7fc6-90ad" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a44-f56f-9699-750c" name="[Honorum] Crusading Spirit" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="c985-7b87-8c25-159f" name="[Honorum] Crusading Spirit" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Honorum player. Play this Stratagem during any Strategy phase. For the remainder of the phase, friendly Legio Honorum Titans do not suffer penalties to Command checks. In addition, a single Legio Honorum Titan may re-roll a failed Command check made when issuing Orders.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="bbce-3068-c0a5-f61c" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="aff6-e55a-b2e1-e0c3" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d134-fe69-a13d-ce02" name="[Osedax] Relentless March" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="ef4d-e928-d8af-1d93" name="[Osedax] Relentless March" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Osedax player. Play this Stratagem during any Strategy phase. For the remainder of the round, friendly Legio Osedax Titans may be issued Full Stride orders without the need to make a Command check and are not affected by Difficult terrain and Dangerous terrain.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="65ff-f881-049c-fb0c" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="cb38-f0b3-1471-4ec3" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="1.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b3f-6054-0791-454b" name="[Osedax] Blood Begets Blood" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e61f-45ed-9b9c-1db1" name="[Osedax] Blood Begets Blood" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Osedax player. Play this Stratagem when a friendly Legio Osedax Titan suffers Catastrophic Damage. After resolving the effects of the Catastrophic Damage, every friendly Legio Osedax Titan may immediately make a single weapon attack. This attack must be made against the closest visible enemy unit. Increase the Plasma Reactor level of any Titan that makes an attack in this way by 2, in addition to any other advances associated with weapon fire.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5a1e-10b8-0ed7-bd63" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="307a-d55e-e674-426c" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63e0-58a3-913b-05fb" name="[Oberon] Decisive Action" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="7fbc-1102-58a5-e3a8" name="[Overon] Decisive Action" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Oberon player. Play this Stratagem at the start of any Strategy phase. If played during the first round, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or First Fire orders without needing a Command check. If played during any round after the first, until the end of the phase, Legio Oberon Titans may be issued with Full Stride or Split Fire orders without needing a Command check. All Legio Oberon Titans issued Orders via this Stratagem must be issued the same Order.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f4b1-606c-0734-22c1" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="053f-680f-08f5-9f3f" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b6c1-0c75-44d4-2d3d" name="[Oberon] Strategiser" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="b9e7-0f85-191a-2514" name="[Overon] Strategiser" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Oberon player. Play this Stratagem when an opponent plays a Stratagem that costs 2 or fewer Stratagem points, before resolving its effects. The Stratagem is discarded and its effects ignored.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a392-cbb8-7d2f-5ce5" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="f77b-c67d-6ceb-ef70" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="3.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5975-63d5-3099-4541" name="[Lysanda] Frontier Guard" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="e4ca-d88f-7676-2d3b" name="[Lysanda] Frontier Guard" hidden="false">
+          <description>This Stratagem can be purchased by any Legio Lysanda player. Play this Stratagem during the Strategy phase of any round. Until the end of the round, the BS and WS of any Legio Lysanda Titan that is within 6&quot; of an objective marker (for their own victory conditions) when this Stratagem is played is increased by 1, to a maximum of 2+.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="dba2-9792-5165-09fd" name="Strategems" hidden="false" targetId="821a-78d5-2a79-2d01" primary="true"/>
+        <categoryLink id="0e29-dfdb-3abb-63a3" name="Legio Astorum" hidden="false" targetId="b151-0349-256d-f2b4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="2.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3806,8 +5359,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e15b-a129-511b-9f0c" name="Vortex Payload" hidden="false" collective="false" import="true" type="upgrade">
@@ -3824,8 +5377,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ae62-678e-f5e5-d7ca" name="Aquila Benedictus" hidden="false" collective="false" import="true" type="upgrade">
@@ -3839,8 +5392,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="60cd-8b8a-8dde-4192" name="Plasmatic Binders" hidden="false" collective="false" import="true" type="upgrade">
@@ -3853,8 +5406,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bff9-cba5-d29f-b7fb" name="Null Emitter" hidden="true" collective="false" import="true" type="upgrade">
@@ -3874,8 +5427,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d50a-6007-c232-c4bb" name="Hunter Shells (Paired Gatlings)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3895,8 +5448,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="60.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="60.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ad3b-0cce-e203-994c" name="Hunter Shells " hidden="false" collective="false" import="true" type="upgrade">
@@ -3942,8 +5495,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3972,8 +5525,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3a0d-6b76-f33b-3756" name="Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
@@ -3986,8 +5539,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7eee-4bce-2938-9fab" name="Hardened Casing" hidden="false" collective="false" import="true" type="upgrade">
@@ -3997,8 +5550,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="5.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="5.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b721-a95a-5116-d607" name="Bastion Shielding" hidden="false" collective="false" import="true" type="upgrade">
@@ -4011,8 +5564,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a0fe-8ad2-b16c-3d42" name="Oath Banner" hidden="false" collective="false" import="true" type="upgrade">
@@ -4025,8 +5578,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="5.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="5.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4050,8 +5603,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3863-c024-1fab-8dcf" name="Enhanced Auspex Relays" hidden="false" collective="false" import="true" type="upgrade">
@@ -4076,8 +5629,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6330-4a74-b842-0d6c" name="Gravatus Plating" hidden="false" collective="false" import="true" type="upgrade">
@@ -4103,8 +5656,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="be3c-ea33-c6b2-d8a0" name="Motive Sub-reactors" hidden="false" collective="false" import="true" type="upgrade">
@@ -4130,8 +5683,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5d90-759a-975d-dedd" name="Devotional War Sirens" hidden="false" collective="false" import="true" type="upgrade">
@@ -4156,8 +5709,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6c33-b150-7969-785b" name="Fortis Motivators" hidden="false" collective="false" import="true" type="upgrade">
@@ -4182,8 +5735,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7b5b-1a4d-d7b5-9cff" name="Cameleoline Shrouding" hidden="false" collective="false" import="true" type="upgrade">
@@ -4208,8 +5761,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="35.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="35.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7ab6-3d42-5422-3496" name="Infernus Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -4239,8 +5792,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2aaa-7fc2-5a7e-b245" name="Bastion Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -4260,8 +5813,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7074-eee3-3aa0-2a26" name="Maglock Shells (Paired Gatlings)" hidden="false" collective="false" import="true" type="upgrade">
@@ -4286,8 +5839,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="60.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="60.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2abe-aaf3-2758-8c3e" name="Maglock Shells" hidden="false" collective="false" import="true" type="upgrade">
@@ -4340,8 +5893,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0b7d-663d-af11-8e99" name="Reinforced Plating" hidden="false" collective="false" import="true" type="upgrade">
@@ -4361,8 +5914,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3b97-b6c2-281a-debc" name="Bi-folded Power Containment" hidden="false" collective="false" import="true" type="upgrade">
@@ -4382,8 +5935,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f8bc-0744-51ca-3cac" name="Terminus Override Mechanism" hidden="false" collective="false" import="true" type="upgrade">
@@ -4403,8 +5956,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6a81-58a3-940d-6046" name="Secondary Plating" hidden="false" collective="false" import="true" type="upgrade">
@@ -4424,8 +5977,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9353-a0b7-fa4f-a3b7" name="Hunting Auspex" hidden="false" collective="false" import="true" type="upgrade">
@@ -4445,8 +5998,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2d49-457f-ef3e-35bd" name="Basilius Throne" hidden="false" collective="false" import="true" type="upgrade">
@@ -4471,8 +6024,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0472-8319-0275-dc8b" name="Clinging Phosphex" hidden="false" collective="false" import="true" type="upgrade">
@@ -4504,8 +6057,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5869-9ed1-f541-67f3" name="Dark Blessing" hidden="false" collective="false" import="true" type="upgrade">
@@ -4525,8 +6078,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="5.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="5.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="01e4-3066-a702-e758" name="Static Rounds" hidden="false" collective="false" import="true" type="upgrade">
@@ -4558,8 +6111,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d7e1-f38c-9740-239d" name="Earthbreaker Missiles (Warlord)" hidden="false" collective="false" import="true" type="upgrade">
@@ -4584,8 +6137,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="16b2-ca4a-df27-7b58" name="Earthbreaker Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -4610,8 +6163,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4cd0-f574-9e28-5b09" name="Accelerated Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
@@ -4643,8 +6196,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="95d3-99fe-fb08-1303" name="Mordantised Ceramite" hidden="false" collective="false" import="true" type="upgrade">
@@ -4664,8 +6217,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b5b9-492c-08a5-3c5a" name="Mantle of Responsibility" hidden="false" collective="false" import="true" type="upgrade">
@@ -4685,8 +6238,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cafd-331a-a52c-aee6" name="Directed Pressure Outlet" hidden="false" collective="false" import="true" type="upgrade">
@@ -4742,8 +6295,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5526-634d-dcff-ae5f" name="Remains of the Fallen" hidden="false" collective="false" import="true" type="upgrade">
@@ -4763,8 +6316,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="105c-cc9f-92b9-11f9" name="The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="true" type="upgrade">
@@ -4785,8 +6338,8 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="96c3-5873-a936-d8aa" name="Plasma Channels" hidden="false" collective="false" import="true" type="upgrade">
@@ -4806,8 +6359,8 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="86a0-8012-ac80-938e" name="Radiative Warheads" hidden="false" collective="false" import="true" type="upgrade">
@@ -4839,8 +6392,8 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="51f0-370d-f035-8657" name="Blind Launchers" hidden="false" collective="false" import="true" type="upgrade">
@@ -4860,8 +6413,8 @@ of its bolter or missile weapons, and may ignore the effects of the Draining tra
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2d84-7283-db1b-f7ed" name="Janus Pattern Missiles" hidden="false" collective="false" import="true" type="upgrade">
@@ -4894,8 +6447,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b66e-127d-be02-4bd5" name="Twinned Machine Spirits" hidden="false" collective="false" import="true" type="upgrade">
@@ -4915,8 +6468,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="858b-eb1d-eaaa-bd84" name="Disruption Emitters" hidden="false" collective="false" import="true" type="upgrade">
@@ -4936,8 +6489,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="30.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c5ed-cb07-7b95-126d" name="Plasma Gargoyles" hidden="false" collective="false" import="true" type="upgrade">
@@ -4957,8 +6510,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="15.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="043a-a5bc-429d-2359" name="Storm Frag Shells (VMB Array)" hidden="false" collective="false" import="true" type="upgrade">
@@ -4983,8 +6536,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="45.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="45.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="67c4-c822-d8cf-c412" name="Storm Frag Shells" hidden="false" collective="false" import="true" type="upgrade">
@@ -5040,8 +6593,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="25.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d2ee-5465-bc1a-0b33" name="Auditory Barrage" hidden="false" collective="false" import="true" type="upgrade">
@@ -5061,8 +6614,8 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
-            <cost name="Strategem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+            <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="10.0"/>
+            <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5846,6 +7399,69 @@ target. The rest of the missile launcher’s dice can then either be applied to 
             </modifier>
           </modifiers>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e142-36b5-d887-6c29" name="Universal Stratagems" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="c7aa-2d1d-1507-472d" name="Artillery Bombardment" hidden="false" collective="false" import="true" targetId="5a0b-8fc2-b985-9eca" type="selectionEntry"/>
+        <entryLink id="3e17-a7b8-bc9a-3721" name="Orbital Lance Strike" hidden="false" collective="false" import="true" targetId="0596-8fb4-1516-cf9d" type="selectionEntry"/>
+        <entryLink id="3433-ce4b-9c4e-c1fc" name="Blind Barrage" hidden="false" collective="false" import="true" targetId="a1b8-ea79-9611-3889" type="selectionEntry"/>
+        <entryLink id="fa2a-d261-52a1-12df" name="Noble Sacrifice" hidden="false" collective="false" import="true" targetId="6020-cdeb-fb1b-7581" type="selectionEntry"/>
+        <entryLink id="3c05-9e11-2c52-3cce" name="Outflank" hidden="false" collective="false" import="true" targetId="a111-216f-6196-f92a" type="selectionEntry"/>
+        <entryLink id="eab8-5241-d7a3-42a4" name="Thermal Mines" hidden="false" collective="false" import="true" targetId="2f1a-ec89-e799-0404" type="selectionEntry"/>
+        <entryLink id="4831-c29b-8909-d80e" name="Sabotage" hidden="false" collective="false" import="true" targetId="7702-457c-dcb6-0a8b" type="selectionEntry"/>
+        <entryLink id="ee84-abf6-ae57-a56a" name="Voidbreaker Field" hidden="false" collective="false" import="true" targetId="6e3f-5b50-7c02-ce15" type="selectionEntry"/>
+        <entryLink id="bf79-6301-fb04-abdb" name="Experimental Weapon" hidden="false" collective="false" import="true" targetId="cb26-2609-02d4-d5d7" type="selectionEntry"/>
+        <entryLink id="3310-1777-59dd-042f" name="Dawn Attack" hidden="false" collective="false" import="true" targetId="f29c-45f1-bf31-5902" type="selectionEntry"/>
+        <entryLink id="43dd-f7d0-7832-414d" name="Cursed Earth" hidden="false" collective="false" import="true" targetId="5f33-1b82-06dd-e44c" type="selectionEntry"/>
+        <entryLink id="e742-a5d8-af46-327b" name="Vox Blackout" hidden="false" collective="false" import="true" targetId="9f1e-ff47-7b04-afab" type="selectionEntry"/>
+        <entryLink id="8220-9cf9-7035-a4b7" name="Auspex Bafflers" hidden="false" collective="false" import="true" targetId="d461-02cf-f753-1e22" type="selectionEntry"/>
+        <entryLink id="907e-b2ae-8f06-71a2" name="Ablative Armour" hidden="false" collective="false" import="true" targetId="42f6-8dbf-5355-e738" type="selectionEntry"/>
+        <entryLink id="f483-7791-c9ce-9706" name="Overcharged Cannon" hidden="false" collective="false" import="true" targetId="4029-6e0f-a705-4e89" type="selectionEntry"/>
+        <entryLink id="4ed2-6744-4234-01de" name="Strafing Run" hidden="false" collective="false" import="true" targetId="3dde-35da-aff8-fda6" type="selectionEntry"/>
+        <entryLink id="dc74-ee2e-c95b-0321" name="Scatterable Mines" hidden="false" collective="false" import="true" targetId="70d8-1e11-4565-ce8f" type="selectionEntry"/>
+        <entryLink id="9d02-f0f3-71be-39d5" name="Static Rain" hidden="false" collective="false" import="true" targetId="27f5-7866-70e3-fd84" type="selectionEntry"/>
+        <entryLink id="bb1d-c1d7-d6b3-dd57" name="Earthshaker Mines" hidden="false" collective="false" import="true" targetId="f2a8-46cc-9457-c60a" type="selectionEntry"/>
+        <entryLink id="218d-0f6d-8fe9-522d" name="Quake Shells" hidden="false" collective="false" import="true" targetId="8937-e617-5f46-7b39" type="selectionEntry"/>
+        <entryLink id="dd0d-0ced-ded7-7c47" name="Haywire Barrage" hidden="false" collective="false" import="true" targetId="97a2-15f4-c5a4-6bca" type="selectionEntry"/>
+        <entryLink id="f5ea-cabe-76c7-5042" name="Dusk Attack" hidden="false" collective="false" import="true" targetId="8948-c9e8-722d-e486" type="selectionEntry"/>
+        <entryLink id="215c-cc81-5c44-4bc6" name="False Intel" hidden="false" collective="false" import="true" targetId="d7d2-857c-415a-bb7f" type="selectionEntry"/>
+        <entryLink id="61ac-7448-f081-201f" name="Reactor Surge" hidden="false" collective="false" import="true" targetId="fa27-6bcc-489a-3092" type="selectionEntry"/>
+        <entryLink id="0112-dfeb-e6e0-73b0" name="Partial Shutdown" hidden="false" collective="false" import="true" targetId="868b-a5b6-3748-43f4" type="selectionEntry"/>
+        <entryLink id="6742-911b-d89e-fb46" name="Tactical Assessment" hidden="false" collective="false" import="true" targetId="7c2c-e1ec-d420-fc4f" type="selectionEntry"/>
+        <entryLink id="ffb1-59a8-8acc-adb2" name="Last Ditch Effort" hidden="false" collective="false" import="true" targetId="ae1e-4588-ded0-2364" type="selectionEntry"/>
+        <entryLink id="a87a-ef4d-8799-aef6" name="Concealment Barrage" hidden="false" collective="false" import="true" targetId="35fa-a217-7a34-4939" type="selectionEntry"/>
+        <entryLink id="1a20-93ce-0b93-0e70" name="MIU Link" hidden="false" collective="false" import="true" targetId="09ea-6d5a-dfc2-7669" type="selectionEntry"/>
+        <entryLink id="190e-f347-447e-31f2" name="Augmented Servitor Clades" hidden="false" collective="false" import="true" targetId="430b-b5b9-6986-8f5a" type="selectionEntry"/>
+        <entryLink id="7d5f-b999-a781-f793" name="Veteran Princeps" hidden="false" collective="false" import="true" targetId="901f-704b-7304-03b3" type="selectionEntry"/>
+        <entryLink id="adce-1d2b-8a5e-3efa" name="Shock Mines" hidden="false" collective="false" import="true" targetId="d3eb-33c5-1c17-70d1" type="selectionEntry"/>
+        <entryLink id="cabf-5ee4-e524-c1b2" name="Tracer Cloud" hidden="false" collective="false" import="true" targetId="42b6-c070-d5ba-3174" type="selectionEntry"/>
+        <entryLink id="b743-e1bb-09c4-5676" name="Homing Warheads" hidden="false" collective="false" import="true" targetId="aa12-c5d1-eb32-ed16" type="selectionEntry"/>
+        <entryLink id="738b-4d8c-732c-ee0c" name="Enhanced Coolant" hidden="false" collective="false" import="true" targetId="0f3b-ae97-6641-d2b3" type="selectionEntry"/>
+        <entryLink id="dec8-3573-708c-9f0d" name="Redundant Systems" hidden="false" collective="false" import="true" targetId="24ff-a46c-1c21-da7f" type="selectionEntry"/>
+        <entryLink id="4256-e814-293d-d998" name="Experimental Locomotors" hidden="false" collective="false" import="true" targetId="c7de-7d47-8393-1224" type="selectionEntry"/>
+        <entryLink id="cd86-93b4-2cba-9a1c" name="Override Signal" hidden="false" collective="false" import="true" targetId="1b93-e3cd-9af6-e266" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8768-140e-7a58-2885" name="Loyalist Stratagems" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="a31f-91c7-1c22-d381" name="Secutarii Battalion" hidden="false" collective="false" import="true" targetId="fcbb-8ee7-2015-9d20" type="selectionEntry"/>
+        <entryLink id="a75d-d528-0868-0ad8" name="Wages of Betrayal" hidden="false" collective="false" import="true" targetId="6a7d-e53f-bd86-bfcd" type="selectionEntry"/>
+        <entryLink id="08de-f220-0360-9248" name="Endurance of Terra" hidden="false" collective="false" import="true" targetId="cc10-c493-6b4d-488d" type="selectionEntry"/>
+        <entryLink id="b9e9-9fa0-4ad1-5984" name="Great Crusade Titans" hidden="false" collective="false" import="true" targetId="64fb-ff33-f3f7-feec" type="selectionEntry"/>
+        <entryLink id="9ad3-13fa-ef1a-2b81" name="The Long Retreat" hidden="false" collective="false" import="true" targetId="bf2c-3508-5b00-eee2" type="selectionEntry"/>
+        <entryLink id="e168-caaf-ca41-0b85" name="Martian Servitor Clades" hidden="false" collective="false" import="true" targetId="3bc8-fefc-43de-5eb5" type="selectionEntry"/>
+        <entryLink id="dbd0-bbc1-266f-0399" name="Iron Resolve" hidden="false" collective="false" import="true" targetId="9e5a-1604-1fcc-7875" type="selectionEntry"/>
+        <entryLink id="03a1-0d64-7f91-db6f" name="EMP Discharge" hidden="false" collective="false" import="true" targetId="8442-cea2-9f20-8297" type="selectionEntry"/>
+        <entryLink id="c17f-e304-801b-0ea2" name="Only Forwards" hidden="false" collective="false" import="true" targetId="b7e0-9860-994c-382f" type="selectionEntry"/>
+        <entryLink id="c142-09a6-d0b7-42da" name="Even in Death" hidden="false" collective="false" import="true" targetId="d32d-def2-eef4-cdbc" type="selectionEntry"/>
+        <entryLink id="420a-13f3-e001-f693" name="Weapons to Full" hidden="false" collective="false" import="true" targetId="3305-b44f-acaf-c0bf" type="selectionEntry"/>
+        <entryLink id="a188-27ed-a0c9-c1b9" name="Sacrificial Lock-on" hidden="false" collective="false" import="true" targetId="a32e-ccfe-6226-b0da" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9141-c921-c74c-4aac" name="Legio-Specific Stratagems" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="f2fd-1fd8-5a83-01ce" name="[Astorum] Machine Defiance" hidden="false" collective="false" import="true" targetId="c830-1547-d4de-5bef" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
