@@ -126,6 +126,10 @@
         <entryLink id="a960-c800-1e48-eb43" name="Universal Stratagems" hidden="false" collective="false" import="true" targetId="e142-36b5-d887-6c29" type="selectionEntryGroup"/>
         <entryLink id="e531-7293-eda7-7f85" name="Legio-Specific Stratagems" hidden="false" collective="false" import="true" targetId="9141-c921-c74c-4aac" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Stratagem Points" typeId="a891-5543-2008-f12d" value="0.0"/>
+        <cost name=" Points" typeId="a273-87d3-a4bf-b879" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -200,50 +204,36 @@
         <categoryLink id="d5a6-cf50-9c41-1934" name="New CategoryLink" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="19ad-5f7d-0836-50ce" name="Titan Legios" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
+        <entryLink id="19ad-5f7d-0836-50ce" name="Legio" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c46-66a3-fa3c-a8d2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54a3-2804-81bf-e68d" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="4788-e28e-34c9-4693" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="1ea7-d687-3ed4-4498" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="27f0-37fb-f1e8-ef98" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="aa53-8cad-4378-6d89" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="27f0-37fb-f1e8-ef98" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ea7-d687-3ed4-4498" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa53-8cad-4378-6d89" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="1f2e-fbde-1597-dfc8" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="745c-eaf4-fbb0-283d" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="27f0-37fb-f1e8-ef98" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf81-d767-aa09-6298" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="745c-eaf4-fbb0-283d" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="1555-c60e-5071-dbf3" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d59f-a988-070c-9118" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0237-288c-b153-6423" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="2f8f-1d6a-3a19-799b" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f86-f469-55e0-ec78" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a400-5853-9065-b7e2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d98e-9e7b-abb8-51b0" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="c99b-908e-0b65-c5a5" value="3.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8671-baba-db8f-88b0" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c99b-908e-0b65-c5a5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3d52-2c91-712a-781c" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ddd-bf04-866f-2f15" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b6-82dd-aa5c-3c38" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -728,50 +718,48 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72c8-b932-aa81-7a93" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba81-3765-e53f-c8d3" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="0230-2a10-56a4-865c" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="ec22-cf1f-e097-58e0" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="8000-3c83-3415-3ea8" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec22-cf1f-e097-58e0" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8000-3c83-3415-3ea8" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="c082-2654-56e8-a201" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d231-6d0f-b4d1-525c" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6526-eca5-673a-2f4e" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="2384-615b-880e-31b2" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="ec12-f7fc-bd22-3092" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec12-f7fc-bd22-3092" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4004-4981-6720-f060" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="fa24-448d-60c5-86be" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="af57-03d4-225f-940f" value="1.0">
+              <conditions>
+                <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af57-03d4-225f-940f" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dc9-2d05-8658-0d84" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="615e-ea0d-1c4d-d2d3" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c71-9aeb-e9c2-6362" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="352a-a1cc-ccec-81e4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0233-8246-3e61-6684" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="5621-64fc-2195-1812" value="1.0">
+              <conditions>
+                <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="5621-64fc-2195-1812" value="1.0">
+              <conditions>
+                <condition field="selections" scope="94f0-df8b-3b1f-42f0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5621-64fc-2195-1812" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee0-f79b-1867-8016" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -794,39 +782,37 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec06-6314-9a3d-1b0b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d001-ce6f-13d1-6aec" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="4412-b5ea-8eea-dc7f" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="8506-0223-35d7-5527" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="411d-b82c-116c-8d1d" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="71f1-4392-ed36-d4c0" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="411d-b82c-116c-8d1d" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8506-0223-35d7-5527" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71f1-4392-ed36-d4c0" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="330b-9f97-3a03-4d98" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="c02e-62c7-2f6d-2adf" value="5.0">
-                  <conditions>
-                    <condition field="selections" scope="411d-b82c-116c-8d1d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02e-62c7-2f6d-2adf" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7781-266d-c471-595a" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="e4dd-4cd1-e109-0b3b" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="227b-09c5-c66d-4d83" value="1.0">
+              <conditions>
+                <condition field="selections" scope="411d-b82c-116c-8d1d" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="227b-09c5-c66d-4d83" value="1.0">
+              <conditions>
+                <condition field="selections" scope="411d-b82c-116c-8d1d" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="227b-09c5-c66d-4d83" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd1-cae0-2420-898d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="38c2-855f-f92b-e48b" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="ddf8-1fb6-e629-2f5d" value="5.0">
+              <conditions>
+                <condition field="selections" scope="411d-b82c-116c-8d1d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddf8-1fb6-e629-2f5d" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f348-4c57-fee4-c1fe" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -849,50 +835,48 @@ If a Titan attacks its intended target, the controlling player can re-roll Hit r
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af5d-caff-5ca4-499e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2663-7175-d735-4a4a" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="d715-a0b9-d234-3897" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="0107-8357-8761-4652" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions>
-                    <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="4d19-f676-f09f-9745" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions>
-                    <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d19-f676-f09f-9745" type="max"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0107-8357-8761-4652" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="2367-3326-026c-5582" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="f1fa-8f87-de6c-759d" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db5b-c057-0ceb-bf41" type="min"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1fa-8f87-de6c-759d" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="3c8b-311d-631b-9ae9" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="3087-cbd2-7417-5582" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="3087-cbd2-7417-5582" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3087-cbd2-7417-5582" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92ef-b1d0-07d1-acbd" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="67d3-10ce-c45f-a7bf" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="71f9-be70-1795-4a5d" value="3.0">
+              <conditions>
+                <condition field="selections" scope="1ea7-d1fd-6570-fca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a025-067c-7d85-f75c" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71f9-be70-1795-4a5d" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -972,28 +956,18 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f311-eda4-ee98-350f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="955e-d7b0-aedb-50f0" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="3223-4714-658d-dfe9" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21bb-3a7a-9a8c-cd3c" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b4b-51db-ca47-4b74" type="min"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="0717-3a6b-b57e-f632" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c08-e64c-2a45-2e72" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d2-17eb-9b55-abcf" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-            <entryLink id="d285-8f7b-f40c-52a3" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d782-6fbb-eaa3-a644" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f91-1802-2488-7ba7" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="02e4-9bdd-f076-040f" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b0b-a6f8-1fec-b56f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e286-8656-dbf9-11e2" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="daaa-72da-90d8-4704" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b4-6d62-2e14-61b6" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="310c-1691-d033-1672" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1016,14 +990,12 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6203-227c-bcef-bde5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a18-117f-2cee-e294" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6301-e77d-76f7-a13e" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9c8-8c29-ff0a-374e" type="max"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63dd-5da6-115d-26dc" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="09cd-c3a6-6a5b-ebf0" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad5-45cc-9ac5-e86f" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70a2-bab5-82e7-6359" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1046,56 +1018,54 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b52-590d-2f9f-ee34" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f559-476e-98a3-ae9d" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="48e1-e592-a882-d4ab" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="0061-fddc-a9f4-bbc4" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions>
-                    <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="5385-6f5e-2092-b963" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions>
-                    <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5385-6f5e-2092-b963" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0061-fddc-a9f4-bbc4" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0f69-8686-7136-d925" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="732f-c7ee-226e-b501" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5877-4355-bb64-b068" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6d7f-2384-b1e8-0391" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="20a2-e225-187a-ef05" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a2-e225-187a-ef05" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6540-c62a-4c74-9557" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="ee47-1a1a-a10d-837d" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="f79b-dc75-4ce6-2681" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="f79b-dc75-4ce6-2681" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f79b-dc75-4ce6-2681" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af5c-4614-487d-2f53" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f939-bb15-b596-888d" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="77fe-2f0b-435d-d14e" value="2.0">
+              <conditions>
+                <condition field="selections" scope="59a2-e0d7-dea7-ebdb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77fe-2f0b-435d-d14e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80f1-3c28-0a91-f8b1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e7d0-707a-96f6-ca0c" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efd5-1c30-2a5e-c338" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ea-976e-b7c1-d37d" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1118,39 +1088,37 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e32b-35ff-be45-ca74" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6850-acd4-b43b-bdd7" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="3670-7606-4a28-4092" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="4b71-ada4-988b-e390" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="2921-b88e-4539-27ba" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="c318-4e33-4f95-438b" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="2921-b88e-4539-27ba" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c318-4e33-4f95-438b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b71-ada4-988b-e390" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0c6d-b93a-8133-b729" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="56a7-03ad-60bd-8eb5" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="2921-b88e-4539-27ba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56a7-03ad-60bd-8eb5" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9737-bf17-4f8e-cd64" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="9866-deb4-a178-5b3b" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="78fb-1bb3-8c8d-f5c2" value="1.0">
+              <conditions>
+                <condition field="selections" scope="2921-b88e-4539-27ba" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="78fb-1bb3-8c8d-f5c2" value="1.0">
+              <conditions>
+                <condition field="selections" scope="2921-b88e-4539-27ba" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78fb-1bb3-8c8d-f5c2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4956-123f-ac2b-c8ed" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="de53-120a-7420-dd0b" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="50af-044c-57bb-057b" value="4.0">
+              <conditions>
+                <condition field="selections" scope="2921-b88e-4539-27ba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50af-044c-57bb-057b" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb09-4906-25c5-5f03" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1168,25 +1136,23 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="a61c-3302-e18b-8830" name="New CategoryLink" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6f13-c9dc-ec4b-137f" name="Titan Legios" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
+        <entryLink id="6f13-c9dc-ec4b-137f" name="Legio" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c03-4b61-1858-354a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1673-87fa-825b-229e" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6b65-b498-74a0-5b94" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9de-0c64-440b-2db8" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6888-5309-2b9e-3e11" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="1f19-78fa-b2b8-aa76" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dff-b480-4ef4-23fe" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60f9-9fff-dd1d-b1d0" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="22bf-835b-cd82-5867" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3206-5642-5939-ec7d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f64-d56f-a373-988c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5c2f-fd1e-36c9-9fe1" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efc-9ca2-9075-2118" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f69b-ba6c-080d-cf89" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1204,55 +1170,53 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
         <categoryLink id="7217-6c5c-4fc0-1475" name="New CategoryLink" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8a15-25b0-b80f-e4b0" name="Titan Legios" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
+        <entryLink id="8a15-25b0-b80f-e4b0" name="Legio" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8dd-68bb-d1fa-5e9b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1695-d358-3994-ebc3" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="63fb-3e89-de64-6671" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="eb72-bd1e-9def-100a" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="4d34-8c66-7003-c947" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb72-bd1e-9def-100a" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d34-8c66-7003-c947" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="8fb5-744b-cd6f-3267" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c5e-3437-ecfa-7e46" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3da-5896-c55e-437d" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="c79c-1253-6b66-ac78" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="ea12-61ca-52d4-c18f" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea12-61ca-52d4-c18f" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e694-912b-5b49-2738" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="f55a-c3cc-5041-7842" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f32b-c915-3102-5f52" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d49d-8fc8-af06-0caf" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c001-7725-00d5-6321" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="0922-5635-acab-2e69" value="1.0">
+              <conditions>
+                <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0922-5635-acab-2e69" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c260-f698-5faa-89a1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3c7d-35b7-2307-af68" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="08ac-9fd9-3378-7f3a" value="1.0">
+              <conditions>
+                <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="08ac-9fd9-3378-7f3a" value="1.0">
+              <conditions>
+                <condition field="selections" scope="addf-1c49-b1a5-b4f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08ac-9fd9-3378-7f3a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ed8-ad09-bfb4-f309" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1275,20 +1239,18 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adef-c6cd-657a-5b65" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2410-864c-e33d-a904" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="431d-6a37-f6a7-20a1" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e9e-80f6-2ebe-d5e6" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a85-575e-56e4-04d4" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="3ccc-2748-1813-f38c" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0c1-d179-b53d-7f9e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2028-5f83-accf-9488" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="869b-60eb-22d3-5de8" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a8-9cbe-3f6f-d4b3" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb96-b122-a51f-88ad" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7e9b-17e9-20a3-4b26" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="789e-9595-1efd-f1f6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="866d-d0a4-8c2b-520b" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1311,56 +1273,54 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7e-053b-d508-3a72" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab49-52d9-b17a-7c36" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="0c5b-71ef-3ffa-05e7" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="dcb5-c094-d473-a890" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions>
-                    <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="2954-9506-8b86-64ee" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
-                  </repeats>
-                  <conditions>
-                    <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcb5-c094-d473-a890" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2954-9506-8b86-64ee" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="d2ab-e697-4abf-60ff" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c412-b1db-9ab1-9086" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f24-acaf-471f-88b5" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="f8ac-93dc-bdcf-5465" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="a9a1-9790-26bd-b00e" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9a1-9790-26bd-b00e" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f8-c060-810c-1485" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="3629-5446-a717-ba7b" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="94f8-8635-218d-1433" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="94f8-8635-218d-1433" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f8-8635-218d-1433" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd86-30eb-2a0c-3ce1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b048-4734-a154-ba72" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28ad-f431-823a-9314" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e88f-5688-cc36-0616" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7508-5199-7a26-b78d" name="Warhound Titan" hidden="true" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="97de-0527-828c-d104" value="2.0">
+              <conditions>
+                <condition field="selections" scope="3c6d-da2f-7dde-d4d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97de-0527-828c-d104" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9509-d773-0d29-bb80" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1383,20 +1343,18 @@ The Warhounds are the Courtiers, whose role it is to shield the King and Queen. 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3354-34de-077d-eb3f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d27-6045-4c7c-7573" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="12f5-83ee-e121-b0a7" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e55c-a55b-6c3c-974c" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f1-2bfa-2b30-2bec" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="5eaf-2a2e-ceed-a99d" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1d1-d8c5-a287-3ce1" type="max"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c6-f143-cb88-2078" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="e9fd-be68-1f6d-1645" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a212-189a-d664-fe36" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1618-2c19-b6f7-80ec" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c4c0-ffc3-7a8c-d0ec" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e01-81a2-5995-4989" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f279-c92b-ea0f-e8b9" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1416,44 +1374,42 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="cb40-f6c6-e0f0-cde3" name="New CategoryLink" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b522-87bb-c0ef-2ce5" name="Titan Legios" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
+        <entryLink id="b522-87bb-c0ef-2ce5" name="Legio" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af4e-b4ed-beec-63ce" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="703f-ef92-7a90-69a9" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="2b97-0989-f6a4-f530" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="f7b4-506e-afc7-6d76" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="d762-f789-76d1-b9c1" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="d309-d7f9-1a22-88d6" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="d762-f789-76d1-b9c1" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d309-d7f9-1a22-88d6" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7b4-506e-afc7-6d76" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="ecf4-1320-f560-c945" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="7140-0847-de5a-a5d2" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="d762-f789-76d1-b9c1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7140-0847-de5a-a5d2" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6c9-de10-937f-3589" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="e435-34bf-4b61-b002" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="8184-a0c0-58b4-8a42" value="0.0">
+              <conditions>
+                <condition field="selections" scope="d762-f789-76d1-b9c1" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="8184-a0c0-58b4-8a42" value="1.0">
+              <conditions>
+                <condition field="selections" scope="d762-f789-76d1-b9c1" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8184-a0c0-58b4-8a42" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b552-ef45-53d5-4379" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="095d-d2d0-5c63-e8af" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="59d9-daea-c4a1-08dc" value="3.0">
+              <conditions>
+                <condition field="selections" scope="d762-f789-76d1-b9c1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59d9-daea-c4a1-08dc" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208c-2a4d-5231-2973" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1479,55 +1435,53 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63a-c84f-aaf7-1c0d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d274-3f4b-34b3-1265" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="b430-5cfa-08c5-92aa" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="240b-c593-a8e0-b936" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="0e20-fc99-be44-e138" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="240b-c593-a8e0-b936" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="0e20-fc99-be44-e138" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="07b7-b332-77e4-90ba" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="0e20-fc99-be44-e138" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="07b7-b332-77e4-90ba" value="2.0">
-                  <conditions>
-                    <condition field="selections" scope="0e20-fc99-be44-e138" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07b7-b332-77e4-90ba" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240b-c593-a8e0-b936" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="b815-0d62-3acf-37fc" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="e016-8e84-34a2-7103" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="0e20-fc99-be44-e138" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e016-8e84-34a2-7103" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f8a-64ba-33ba-3677" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="b3f6-2453-93f1-e9f8" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a17-e3b1-1992-07dd" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39f8-aebb-a689-da2b" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="719d-14b2-8fe9-a42f" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="292b-a5cb-fc7d-d913" value="1.0">
+              <conditions>
+                <condition field="selections" scope="0e20-fc99-be44-e138" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="292b-a5cb-fc7d-d913" value="2.0">
+              <conditions>
+                <condition field="selections" scope="0e20-fc99-be44-e138" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="292b-a5cb-fc7d-d913" value="1.0">
+              <conditions>
+                <condition field="selections" scope="0e20-fc99-be44-e138" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="292b-a5cb-fc7d-d913" value="2.0">
+              <conditions>
+                <condition field="selections" scope="0e20-fc99-be44-e138" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6de1-4a2b-ba0d-f48b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="292b-a5cb-fc7d-d913" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2f9-783d-e14f-14fa" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="96cf-46c5-1cc1-17d9" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2117-4d3f-ee3c-0b31" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e0-ddb9-985e-b53b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e6b3-de1d-cbd8-8f1b" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="e0d6-3396-26ab-605a" value="4.0">
+              <conditions>
+                <condition field="selections" scope="0e20-fc99-be44-e138" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8175-4b6f-0623-d33b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d6-3396-26ab-605a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c960-8549-7e15-7b93" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1550,32 +1504,30 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30dc-f751-db77-3491" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de2b-847c-41ca-ec24" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="3e76-30d5-b268-9999" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="293b-b93c-6437-15ce" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38dd-a5f4-265b-5933" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="c6f1-d4dd-2843-e98c" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f790-8685-c5a6-67cc" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7e8-2084-5828-1936" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="158c-9e89-da4e-abd6" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e73-f20c-840b-cd95" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae27-8bc8-22f3-f710" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="88b6-c2f6-f9f5-df39" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f98c-89c3-ea79-d17b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11e1-b61c-8b5a-30f7" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="b793-f244-c522-70f8" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" targetId="07ae-2d3b-93d2-fd59" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22fb-8f7a-67ad-2d02" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa21-073e-2aaa-fab0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f176-b792-2e64-400b" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f307-2c91-0e9a-baee" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="276d-68d3-928b-2f72" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e1ae-7007-071b-5999" name="Warlord Titan" hidden="false" collective="false" import="true" targetId="b99f-0913-d308-c0c8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d2d-c97a-a2ad-1b28" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f04-3ef0-6d14-af5f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0ec6-b46d-185f-414c" name="Reaver Titan" hidden="false" collective="false" import="true" targetId="a16c-3642-6059-d347" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6111-491d-667b-328a" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfbf-9767-9cea-cfea" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1593,19 +1545,17 @@ A unit can only be forced to take this check once per round, i.e., if they pass,
         <categoryLink id="2c4c-36b1-9936-d64e" name="New CategoryLink" hidden="false" targetId="7bd8-bfd5-da58-0f2e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0c33-7a9e-0926-7f7c" name="Titan Legios" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
+        <entryLink id="0c33-7a9e-0926-7f7c" name="Legio" hidden="false" collective="false" import="true" targetId="5c59-301c-04e1-3fdf" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f2-c249-387f-eea7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="041a-5497-2129-a82f" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="8f80-51d2-8fb9-8677" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="626c-d0c9-b13a-2c1e" type="max"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f942-0c2e-f622-eadb" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="d15a-334f-e200-0b2f" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da8b-cec5-cb18-5243" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dc5-6f20-62f8-32bd" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -3791,14 +3741,12 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c99-63c0-4512-214e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6005-724d-f9b8-2528" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="978e-6a9b-e32b-ad58" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c9-3483-7167-beda" type="max"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="483f-3fc6-edbd-f1c2" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+        </entryLink>
+        <entryLink id="e201-d52d-564c-9707" name="Warhound Titan" hidden="false" collective="false" import="true" targetId="6de1-4a2b-ba0d-f48b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a6-d504-8e10-c4be" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e00d-4e52-f9e2-55d5" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
